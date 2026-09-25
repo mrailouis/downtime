@@ -1,9 +1,8 @@
 package com.mrailouis;
 
+import com.mrailouis.config.ConfigManager;
 import net.fabricmc.api.ModInitializer;
-
 import net.minecraft.resources.Identifier;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,6 +14,8 @@ public class Downtime implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Downtime initialized");
+
+		ConfigManager.load();
 	}
 
 	public static Identifier id(String path) {
