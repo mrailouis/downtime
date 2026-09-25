@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "downtime",
+	"version": "${version}",
+	"name": "Downtime",
+	"description": "Downtime.",
+	"authors": [
+		"mrai"
+	],
+	"contact": {
+		"homepage": "https://mrailouis.com/"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/downtime/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.mrailouis.Downtime"
+		]
+	},
+	"mixins": [
+		"downtime.mixins.json"
+	],
+	"accessWidener": "downtime.accesswidener",
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
