@@ -8,9 +8,11 @@
 		"mrai"
 	],
 	"contact": {
-		"homepage": "https://mrailouis.com/"
+		"homepage": "https://mrailouis.com/",
+		"sources": "https://github.com/mrailouis/downtime",
+		"issues": "https://github.com/mrailouis/downtime/issues"
 	},
-	"license": "CC0-1.0",
+	"license": "GPL-3.0-only",
 	"icon": "assets/downtime/icon.png",
 	"environment": "*",
 	"entrypoints": {
