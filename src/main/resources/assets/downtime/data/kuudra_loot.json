@@ -1,0 +1,1578 @@
+{
+  "basic": {
+    "freeChest": [
+      {
+        "slot": 1,
+        "item": "1 Crimson Essence",
+        "chance": 50.0
+      },
+      {
+        "slot": 1,
+        "item": "2 Crimson Essence",
+        "chance": 50.0
+      }
+    ],
+    "paidChest": [
+      {
+        "slot": 1,
+        "item": "Aurora Helmet",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Chestplate",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Leggings",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Boots",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Staff",
+        "chance": 1.05
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Helmet",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Chestplate",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Leggings",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Boots",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Helmet",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Chestplate",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Leggings",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Boots",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Helmet",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Chestplate",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Leggings",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Boots",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Wand",
+        "chance": 1.05
+      },
+      {
+        "slot": 1,
+        "item": "Molten Necklace",
+        "chance": 1.2
+      },
+      {
+        "slot": 1,
+        "item": "Molten Cloak",
+        "chance": 1.2
+      },
+      {
+        "slot": 1,
+        "item": "Molten Belt",
+        "chance": 1.2
+      },
+      {
+        "slot": 1,
+        "item": "Molten Bracelet",
+        "chance": 1.2
+      },
+      {
+        "slot": 1,
+        "item": "Tentacle Dye",
+        "chance": 0.001
+      },
+      {
+        "slot": 1,
+        "item": "Terror Helmet",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Terror Chestplate",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Terror Leggings",
+        "chance": 4.31
+      },
+      {
+        "slot": 1,
+        "item": "Terror Boots",
+        "chance": 4.31
+      },
+      {
+        "slot": 2,
+        "item": "Wheel of Fate",
+        "chance": 0.53
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Fatal Tempo I",
+        "chance": 0.03
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Inferno I",
+        "chance": 0.03
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Ferocious Mana I",
+        "chance": 21.87
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Hardened Mana I",
+        "chance": 21.87
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Mana Vampire I",
+        "chance": 21.87
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Strong Mana I",
+        "chance": 21.87
+      },
+      {
+        "slot": 1,
+        "item": "Bezal Shard",
+        "chance": 6.76,
+        "attribute": "Blazing Resistance"
+      },
+      {
+        "slot": 2,
+        "item": "Bezal Shard",
+        "chance": 11.93,
+        "attribute": "Blazing Resistance"
+      },
+      {
+        "slot": 3,
+        "item": "1 Kuudra Teeth",
+        "chance": 100.0
+      },
+      {
+        "slot": 4,
+        "item": "80 Crimson Essence",
+        "chance": 100.0
+      },
+      {
+        "slot": 5,
+        "item": "1 Kraken Shard",
+        "chance": 100.0,
+        "attribute": "Vitality"
+      }
+    ]
+  },
+  "hot": {
+    "freeChest": [
+      {
+        "slot": 1,
+        "item": "14 Crimson Essence",
+        "chance": 33.333333333333336
+      },
+      {
+        "slot": 1,
+        "item": "18 Crimson Essence",
+        "chance": 33.333333333333336
+      },
+      {
+        "slot": 1,
+        "item": "22 Crimson Essence",
+        "chance": 33.333333333333336
+      }
+    ],
+    "paidChest": [
+      {
+        "slot": 1,
+        "item": "Aurora Helmet",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Chestplate",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Leggings",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Boots",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Staff",
+        "chance": 0.99
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Helmet",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Chestplate",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Leggings",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Boots",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Helmet",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Chestplate",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Leggings",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Boots",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Helmet",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Chestplate",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Leggings",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Boots",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Wand",
+        "chance": 0.99
+      },
+      {
+        "slot": 1,
+        "item": "Molten Necklace",
+        "chance": 1.27
+      },
+      {
+        "slot": 1,
+        "item": "Molten Cloak",
+        "chance": 1.27
+      },
+      {
+        "slot": 1,
+        "item": "Molten Belt",
+        "chance": 1.27
+      },
+      {
+        "slot": 1,
+        "item": "Molten Bracelet",
+        "chance": 1.27
+      },
+      {
+        "slot": 1,
+        "item": "Tentacle Dye",
+        "chance": 0.00125
+      },
+      {
+        "slot": 1,
+        "item": "Terror Helmet",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Terror Chestplate",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Terror Leggings",
+        "chance": 4.06
+      },
+      {
+        "slot": 1,
+        "item": "Terror Boots",
+        "chance": 4.06
+      },
+      {
+        "slot": 2,
+        "item": "Wheel of Fate",
+        "chance": 1.19
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Fatal Tempo I",
+        "chance": 0.13
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Inferno I",
+        "chance": 0.13
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Ferocious Mana II",
+        "chance": 19.71
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Hardened Mana II",
+        "chance": 19.71
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Mana Vampire II",
+        "chance": 19.71
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Strong Mana II",
+        "chance": 19.71
+      },
+      {
+        "slot": 1,
+        "item": "Bezal Shard",
+        "chance": 6.36,
+        "attribute": "Blazing Resistance"
+      },
+      {
+        "slot": 2,
+        "item": "Bezal Shard",
+        "chance": 10.75,
+        "attribute": "Blazing Resistance"
+      },
+      {
+        "slot": 1,
+        "item": "Magma Slug Shard",
+        "chance": 5.3,
+        "attribute": "Infection"
+      },
+      {
+        "slot": 2,
+        "item": "Magma Slug Shard",
+        "chance": 8.96,
+        "attribute": "Infection"
+      },
+      {
+        "slot": 4,
+        "item": "1 Kuudra Teeth",
+        "chance": 100.0
+      },
+      {
+        "slot": 3,
+        "item": "200 Crimson Essence",
+        "chance": 100.0
+      },
+      {
+        "slot": 5,
+        "item": "1 Kraken Shard",
+        "chance": 100.0,
+        "attribute": "Vitality"
+      }
+    ]
+  },
+  "burning": {
+    "freeChest": [
+      {
+        "slot": 1,
+        "item": "25 Crimson Essence",
+        "chance": 50.0
+      },
+      {
+        "slot": 1,
+        "item": "30 Crimson Essence",
+        "chance": 50.0
+      }
+    ],
+    "paidChest": [
+      {
+        "slot": 1,
+        "item": "Aurora Helmet",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Chestplate",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Leggings",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Boots",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Staff",
+        "chance": 0.84
+      },
+      {
+        "slot": 1,
+        "item": "Burning Kuudra Core",
+        "chance": 0.12
+      },
+      {
+        "slot": 2,
+        "item": "500 Crimson Essence",
+        "chance": 7.82
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Helmet",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Chestplate",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Leggings",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Boots",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Helmet",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Chestplate",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Leggings",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Boots",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Helmet",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Chestplate",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Leggings",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Boots",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Wand",
+        "chance": 0.84
+      },
+      {
+        "slot": 2,
+        "item": "5 Kuudra Teeth",
+        "chance": 7.82
+      },
+      {
+        "slot": 1,
+        "item": "Mandraa",
+        "chance": 0.96
+      },
+      {
+        "slot": 1,
+        "item": "Molten Necklace",
+        "chance": 1.19
+      },
+      {
+        "slot": 1,
+        "item": "Molten Cloak",
+        "chance": 1.19
+      },
+      {
+        "slot": 1,
+        "item": "Molten Belt",
+        "chance": 1.19
+      },
+      {
+        "slot": 1,
+        "item": "Molten Bracelet",
+        "chance": 1.19
+      },
+      {
+        "slot": 1,
+        "item": "Tentacle Dye",
+        "chance": 0.00167
+      },
+      {
+        "slot": 1,
+        "item": "Terror Helmet",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Terror Chestplate",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Terror Leggings",
+        "chance": 3.43
+      },
+      {
+        "slot": 1,
+        "item": "Terror Boots",
+        "chance": 3.43
+      },
+      {
+        "slot": 2,
+        "item": "Wheel of Fate",
+        "chance": 1.25
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Fatal Tempo I",
+        "chance": 0.16
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Inferno I",
+        "chance": 0.16
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Ferocious Mana III",
+        "chance": 12.81
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Hardened Mana III",
+        "chance": 12.81
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Mana Vampire III",
+        "chance": 12.81
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Strong Mana III",
+        "chance": 12.81
+      },
+      {
+        "slot": 1,
+        "item": "Bezal Shard",
+        "chance": 5.38,
+        "attribute": "Blazing Resistance"
+      },
+      {
+        "slot": 2,
+        "item": "Bezal Shard",
+        "chance": 7.04,
+        "attribute": "Blazing Resistance"
+      },
+      {
+        "slot": 1,
+        "item": "Magma Slug Shard",
+        "chance": 4.48,
+        "attribute": "Infection"
+      },
+      {
+        "slot": 2,
+        "item": "Magma Slug Shard",
+        "chance": 5.87,
+        "attribute": "Infection"
+      },
+      {
+        "slot": 1,
+        "item": "Kada Knight Shard",
+        "chance": 3.64,
+        "attribute": "Lifeline"
+      },
+      {
+        "slot": 2,
+        "item": "Kada Knight Shard",
+        "chance": 4.77,
+        "attribute": "Lifeline"
+      },
+      {
+        "slot": 1,
+        "item": "Wither Specter Shard",
+        "chance": 3.64,
+        "attribute": "Breeze"
+      },
+      {
+        "slot": 2,
+        "item": "Wither Specter Shard",
+        "chance": 4.77,
+        "attribute": "Breeze"
+      },
+      {
+        "slot": 1,
+        "item": "Matcho Shard",
+        "chance": 3.64,
+        "attribute": "Ignition"
+      },
+      {
+        "slot": 2,
+        "item": "Matcho Shard",
+        "chance": 4.77,
+        "attribute": "Ignition"
+      },
+      {
+        "slot": 1,
+        "item": "Lava Flame Shard",
+        "chance": 2.99,
+        "attribute": "Blazing Fortune"
+      },
+      {
+        "slot": 2,
+        "item": "Lava Flame Shard",
+        "chance": 3.91,
+        "attribute": "Blazing Fortune"
+      },
+      {
+        "slot": 3,
+        "item": "2 Kuudra Teeth",
+        "chance": 100.0
+      },
+      {
+        "slot": 4,
+        "item": "400 Crimson Essence",
+        "chance": 100.0
+      },
+      {
+        "slot": 5,
+        "item": "1 Kraken Shard",
+        "chance": 100.0,
+        "attribute": "Vitality"
+      }
+    ]
+  },
+  "fiery": {
+    "freeChest": [
+      {
+        "slot": 1,
+        "item": "100 Crimson Essence",
+        "chance": 100.0
+      }
+    ],
+    "paidChest": [
+      {
+        "slot": 1,
+        "item": "Aurora Helmet",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Chestplate",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Leggings",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Boots",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Staff",
+        "chance": 0.75
+      },
+      {
+        "slot": 1,
+        "item": "Burning Kuudra Core",
+        "chance": 0.32
+      },
+      {
+        "slot": 2,
+        "item": "500 Crimson Essence",
+        "chance": 6.35
+      },
+      {
+        "slot": 2,
+        "item": "2500 Crimson Essence",
+        "chance": 0.63
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Helmet",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Chestplate",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Leggings",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Boots",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Helmet",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Chestplate",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Leggings",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Boots",
+        "chance": 3.09
+      },
+      {
+        "slot": 2,
+        "item": "3 Heavy Pearl",
+        "chance": 6.35
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Helmet",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Chestplate",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Leggings",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Boots",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Wand",
+        "chance": 0.75
+      },
+      {
+        "slot": 2,
+        "item": "5 Kuudra Teeth",
+        "chance": 6.35
+      },
+      {
+        "slot": 2,
+        "item": "25 Kuudra Teeth",
+        "chance": 0.63
+      },
+      {
+        "slot": 1,
+        "item": "Mandraa",
+        "chance": 1.08
+      },
+      {
+        "slot": 1,
+        "item": "Molten Necklace",
+        "chance": 1.18
+      },
+      {
+        "slot": 1,
+        "item": "Molten Cloak",
+        "chance": 1.18
+      },
+      {
+        "slot": 1,
+        "item": "Molten Belt",
+        "chance": 1.18
+      },
+      {
+        "slot": 1,
+        "item": "Molten Bracelet",
+        "chance": 1.18
+      },
+      {
+        "slot": 1,
+        "item": "Tentacle Dye",
+        "chance": 0.0025
+      },
+      {
+        "slot": 1,
+        "item": "Terror Helmet",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Terror Chestplate",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Terror Leggings",
+        "chance": 3.09
+      },
+      {
+        "slot": 1,
+        "item": "Terror Boots",
+        "chance": 3.09
+      },
+      {
+        "slot": 2,
+        "item": "Wheel of Fate",
+        "chance": 1.4
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Fatal Tempo I",
+        "chance": 0.18
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Inferno I",
+        "chance": 0.18
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Ferocious Mana IV",
+        "chance": 10.47
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Hardened Mana IV",
+        "chance": 10.47
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Mana Vampire IV",
+        "chance": 10.47
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Strong Mana IV",
+        "chance": 10.47
+      },
+      {
+        "slot": 1,
+        "item": "Bezal Shard",
+        "chance": 4.84,
+        "attribute": "Blazing Resistance"
+      },
+      {
+        "slot": 2,
+        "item": "Bezal Shard",
+        "chance": 5.71,
+        "attribute": "Blazing Resistance"
+      },
+      {
+        "slot": 1,
+        "item": "Magma Slug Shard",
+        "chance": 4.03,
+        "attribute": "Infection"
+      },
+      {
+        "slot": 2,
+        "item": "Magma Slug Shard",
+        "chance": 4.76,
+        "attribute": "Infection"
+      },
+      {
+        "slot": 1,
+        "item": "Kada Knight Shard",
+        "chance": 3.28,
+        "attribute": "Lifeline"
+      },
+      {
+        "slot": 2,
+        "item": "Kada Knight Shard",
+        "chance": 3.87,
+        "attribute": "Lifeline"
+      },
+      {
+        "slot": 1,
+        "item": "Wither Specter Shard",
+        "chance": 3.28,
+        "attribute": "Breeze"
+      },
+      {
+        "slot": 2,
+        "item": "Wither Specter Shard",
+        "chance": 3.87,
+        "attribute": "Breeze"
+      },
+      {
+        "slot": 1,
+        "item": "Matcho Shard",
+        "chance": 3.28,
+        "attribute": "Ignition"
+      },
+      {
+        "slot": 2,
+        "item": "Matcho Shard",
+        "chance": 3.87,
+        "attribute": "Ignition"
+      },
+      {
+        "slot": 1,
+        "item": "Lava Flame Shard",
+        "chance": 2.69,
+        "attribute": "Blazing Fortune"
+      },
+      {
+        "slot": 2,
+        "item": "Lava Flame Shard",
+        "chance": 3.17,
+        "attribute": "Blazing Fortune"
+      },
+      {
+        "slot": 1,
+        "item": "Fire Eel Shard",
+        "chance": 2.04,
+        "attribute": "Trophy Hunter"
+      },
+      {
+        "slot": 2,
+        "item": "Fire Eel Shard",
+        "chance": 2.41,
+        "attribute": "Trophy Hunter"
+      },
+      {
+        "slot": 1,
+        "item": "Flare Shard",
+        "chance": 2.04,
+        "attribute": "Blazing"
+      },
+      {
+        "slot": 2,
+        "item": "Flare Shard",
+        "chance": 2.41,
+        "attribute": "Blazing"
+      },
+      {
+        "slot": 1,
+        "item": "Barbarian Duke X Shard",
+        "chance": 2.04,
+        "attribute": "Warrior"
+      },
+      {
+        "slot": 2,
+        "item": "Barbarian Duke X Shard",
+        "chance": 2.41,
+        "attribute": "Warrior"
+      },
+      {
+        "slot": 1,
+        "item": "Hellwisp Shard",
+        "chance": 1.67,
+        "attribute": "Matriarch Cubs"
+      },
+      {
+        "slot": 2,
+        "item": "Hellwisp Shard",
+        "chance": 1.97,
+        "attribute": "Matriarch Cubs"
+      },
+      {
+        "slot": 1,
+        "item": "XYZ Shard",
+        "chance": 1.34,
+        "attribute": "Mana Regeneration"
+      },
+      {
+        "slot": 2,
+        "item": "XYZ Shard",
+        "chance": 1.59,
+        "attribute": "Mana Regeneration"
+      },
+      {
+        "slot": 3,
+        "item": "800 Crimson Essence",
+        "chance": 100.0
+      },
+      {
+        "slot": 4,
+        "item": "2 Kuudra Teeth",
+        "chance": 100.0
+      },
+      {
+        "slot": 5,
+        "item": "1 Kraken Shard",
+        "chance": 75.0,
+        "attribute": "Vitality"
+      },
+      {
+        "slot": 5,
+        "item": "2 Kraken Shard",
+        "chance": 25.0,
+        "attribute": "Vitality"
+      }
+    ]
+  },
+  "infernal": {
+    "freeChest": [
+      {
+        "slot": 1,
+        "item": "200 Crimson Essence",
+        "chance": 100.0
+      }
+    ],
+    "paidChest": [
+      {
+        "slot": 1,
+        "item": "Aurora Helmet",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Chestplate",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Leggings",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Boots",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Aurora Staff",
+        "chance": 0.72
+      },
+      {
+        "slot": 1,
+        "item": "Burning Kuudra Core",
+        "chance": 0.51
+      },
+      {
+        "slot": 2,
+        "item": "500 Crimson Essence",
+        "chance": 5.89
+      },
+      {
+        "slot": 2,
+        "item": "2500 Crimson Essence",
+        "chance": 0.59
+      },
+      {
+        "slot": 2,
+        "item": "10000 Crimson Essence",
+        "chance": 0.06
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Helmet",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Chestplate",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Leggings",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Crimson Boots",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Helmet",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Chestplate",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Leggings",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Fervor Boots",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Hellstorm Wand",
+        "chance": 0.1
+      },
+      {
+        "slot": 2,
+        "item": "3 Heavy Pearl",
+        "chance": 5.89
+      },
+      {
+        "slot": 2,
+        "item": "10 Heavy Pearl",
+        "chance": 0.59
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Helmet",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Chestplate",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Leggings",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Boots",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Hollow Wand",
+        "chance": 0.72
+      },
+      {
+        "slot": 2,
+        "item": "5 Kuudra Teeth",
+        "chance": 5.89
+      },
+      {
+        "slot": 2,
+        "item": "25 Kuudra Teeth",
+        "chance": 5.89
+      },
+      {
+        "slot": 2,
+        "item": "100 Kuudra Teeth",
+        "chance": 5.89
+      },
+      {
+        "slot": 1,
+        "item": "Mandraa",
+        "chance": 1.23
+      },
+      {
+        "slot": 1,
+        "item": "Molten Necklace",
+        "chance": 1.23
+      },
+      {
+        "slot": 1,
+        "item": "Molten Cloak",
+        "chance": 1.23
+      },
+      {
+        "slot": 1,
+        "item": "Molten Belt",
+        "chance": 1.23
+      },
+      {
+        "slot": 1,
+        "item": "Molten Bracelet",
+        "chance": 1.23
+      },
+      {
+        "slot": 1,
+        "item": "Tentacle Dye",
+        "chance": 0.005
+      },
+      {
+        "slot": 1,
+        "item": "Terror Helmet",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Terror Chestplate",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Terror Leggings",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Terror Boots",
+        "chance": 2.95
+      },
+      {
+        "slot": 1,
+        "item": "Tormentor",
+        "chance": 0.1
+      },
+      {
+        "slot": 2,
+        "item": "Wheel of Fate",
+        "chance": 1.65
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Fatal Tempo I",
+        "chance": 0.22
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Inferno I",
+        "chance": 0.22
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Ferocious Mana V",
+        "chance": 9.72
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Hardened Mana V",
+        "chance": 9.72
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Mana Vampire V",
+        "chance": 9.72
+      },
+      {
+        "slot": 2,
+        "item": "Enchanted Book Strong Mana V",
+        "chance": 9.72
+      },
+      {
+        "slot": 1,
+        "item": "Bezal Shard",
+        "chance": 4.63,
+        "attribute": "Blazing Resistance"
+      },
+      {
+        "slot": 2,
+        "item": "Bezal Shard",
+        "chance": 5.3,
+        "attribute": "Blazing Resistance"
+      },
+      {
+        "slot": 1,
+        "item": "Magma Slug Shard",
+        "chance": 3.86,
+        "attribute": "Infection"
+      },
+      {
+        "slot": 2,
+        "item": "Magma Slug Shard",
+        "chance": 5.3,
+        "attribute": "Infection"
+      },
+      {
+        "slot": 1,
+        "item": "Kada Knight Shard",
+        "chance": 3.14,
+        "attribute": "Lifeline"
+      },
+      {
+        "slot": 2,
+        "item": "Kada Knight Shard",
+        "chance": 3.59,
+        "attribute": "Lifeline"
+      },
+      {
+        "slot": 1,
+        "item": "Wither Specter Shard",
+        "chance": 3.14,
+        "attribute": "Breeze"
+      },
+      {
+        "slot": 2,
+        "item": "Wither Specter Shard",
+        "chance": 3.59,
+        "attribute": "Breeze"
+      },
+      {
+        "slot": 1,
+        "item": "Matcho Shard",
+        "chance": 3.14,
+        "attribute": "Ignition"
+      },
+      {
+        "slot": 2,
+        "item": "Matcho Shard",
+        "chance": 3.59,
+        "attribute": "Ignition"
+      },
+      {
+        "slot": 1,
+        "item": "Lava Flame Shard",
+        "chance": 2.57,
+        "attribute": "Blazing Fortune"
+      },
+      {
+        "slot": 2,
+        "item": "Lava Flame Shard",
+        "chance": 2.95,
+        "attribute": "Blazing Fortune"
+      },
+      {
+        "slot": 1,
+        "item": "Fire Eel Shard",
+        "chance": 1.95,
+        "attribute": "Trophy Hunter"
+      },
+      {
+        "slot": 2,
+        "item": "Fire Eel Shard",
+        "chance": 2.24,
+        "attribute": "Trophy Hunter"
+      },
+      {
+        "slot": 1,
+        "item": "Flare Shard",
+        "chance": 1.95,
+        "attribute": "Blazing"
+      },
+      {
+        "slot": 2,
+        "item": "Flare Shard",
+        "chance": 2.24,
+        "attribute": "Blazing"
+      },
+      {
+        "slot": 1,
+        "item": "Barbarian Duke X Shard",
+        "chance": 1.95,
+        "attribute": "Warrior"
+      },
+      {
+        "slot": 2,
+        "item": "Barbarian Duke X Shard",
+        "chance": 2.24,
+        "attribute": "Warrior"
+      },
+      {
+        "slot": 1,
+        "item": "Hellwisp Shard",
+        "chance": 1.59,
+        "attribute": "Matriach Cubs"
+      },
+      {
+        "slot": 2,
+        "item": "Hellwisp Shard",
+        "chance": 1.83,
+        "attribute": "Matriach Cubs"
+      },
+      {
+        "slot": 1,
+        "item": "XYZ Shard",
+        "chance": 1.29,
+        "attribute": "Mana Regeneration"
+      },
+      {
+        "slot": 2,
+        "item": "XYZ Shard",
+        "chance": 1.47,
+        "attribute": "Mana Regeneration"
+      },
+      {
+        "slot": 1,
+        "item": "Taurus Shard",
+        "chance": 0.67,
+        "attribute": "Maximal Torment"
+      },
+      {
+        "slot": 2,
+        "item": "Taurus Shard",
+        "chance": 0.77,
+        "attribute": "Maximal Torment"
+      },
+      {
+        "slot": 1,
+        "item": "Lord Jawbus Shard",
+        "chance": 0.51,
+        "attribute": "Crimson Hook"
+      },
+      {
+        "slot": 2,
+        "item": "Lord Jawbus Shard",
+        "chance": 0.59,
+        "attribute": "Crimson Hook"
+      },
+      {
+        "slot": 1,
+        "item": "Cinderbat Shard",
+        "chance": 0.67,
+        "attribute": "Magic Find"
+      },
+      {
+        "slot": 2,
+        "item": "Cinderbat Shard",
+        "chance": 0.77,
+        "attribute": "Magic Find"
+      },
+      {
+        "slot": 1,
+        "item": "Daemon Shard",
+        "chance": 0.51,
+        "attribute": "Pity"
+      },
+      {
+        "slot": 2,
+        "item": "Daemon Shard",
+        "chance": 0.59,
+        "attribute": "Pity"
+      },
+      {
+        "slot": 1,
+        "item": "Moltenfish Shard",
+        "chance": 0.51,
+        "attribute": "Star Bait"
+      },
+      {
+        "slot": 2,
+        "item": "Moltenfish Shard",
+        "chance": 0.59,
+        "attribute": "Star Bait"
+      },
+      {
+        "slot": 1,
+        "item": "Ananke Shard",
+        "chance": 0.05,
+        "attribute": "Wings of Destiny"
+      },
+      {
+        "slot": 2,
+        "item": "Ananke Shard",
+        "chance": 0.06,
+        "attribute": "Wings of Destiny"
+      },
+      {
+        "slot": 3,
+        "item": "3 Kuudra Teeth",
+        "chance": 100.0
+      },
+      {
+        "slot": 4,
+        "item": "2,000 Crimson Essence",
+        "chance": 100.0
+      },
+      {
+        "slot": 5,
+        "item": "1 Kraken Shard",
+        "chance": 50.0,
+        "attribute": "Vitality"
+      },
+      {
+        "slot": 5,
+        "item": "2 Kraken Shard",
+        "chance": 50.0,
+        "attribute": "Vitality"
+      }
+    ]
+  }
+}

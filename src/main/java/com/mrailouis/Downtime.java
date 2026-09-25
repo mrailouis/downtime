@@ -1,6 +1,8 @@
 package com.mrailouis;
 
 import com.mrailouis.config.ConfigManager;
+import com.mrailouis.data.KuudraLootTable;
+import com.mrailouis.data.KuudraTier;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
@@ -16,6 +18,7 @@ public class Downtime implements ModInitializer {
 		LOGGER.info("Downtime initialized");
 
 		ConfigManager.load();
+		KuudraLootTable.get(KuudraTier.BASIC);
 	}
 
 	public static Identifier id(String path) {
