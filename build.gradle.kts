@@ -1,5 +1,6 @@
 plugins {
 	id("net.fabricmc.fabric-loom")
+	id("com.diffplug.spotless")
 	`maven-publish`
 }
 
@@ -7,6 +8,22 @@ repositories {
 	maven {
 		name = "DevAuth"
 		url = uri("https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1")
+	}
+}
+
+spotless {
+	java {
+		removeUnusedImports()
+		importOrder()
+		leadingSpacesToTabs()
+		trimTrailingWhitespace()
+		endWithNewline()
+	}
+
+	kotlinGradle {
+		leadingSpacesToTabs()
+		trimTrailingWhitespace()
+		endWithNewline()
 	}
 }
 
