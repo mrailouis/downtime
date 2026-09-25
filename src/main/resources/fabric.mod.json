@@ -18,6 +18,9 @@
 	"entrypoints": {
 		"main": [
 			"com.mrailouis.Downtime"
+		],
+		"client": [
+			"com.mrailouis.DowntimeClient"
 		]
 	},
 	"mixins": [

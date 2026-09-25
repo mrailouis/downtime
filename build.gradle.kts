@@ -32,7 +32,7 @@ loom {
 
 	runConfigs.named("client") {
 		jvmArguments.add("-Ddevauth.enabled=true")
-		jvmArguments.add("-Ddevauth.account=default")
+		jvmArguments.add("-Ddevauth.account=main")
 	}
 }
 
