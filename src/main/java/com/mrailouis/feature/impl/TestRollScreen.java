@@ -5,6 +5,7 @@ import com.mrailouis.Downtime;
 import com.mrailouis.api.RollCard;
 import com.mrailouis.compat.HypixelLocationTracker;
 import com.mrailouis.config.ConfigManager;
+import com.mrailouis.data.DowntimeSounds;
 import com.mrailouis.data.KuudraTier;
 import com.mrailouis.data.PaidChestLocation;
 import com.mrailouis.extensions.net.minecraft.client.gui.GuiGraphicsExtractor.GuiGraphicsExtractorExtensions;
@@ -57,6 +58,11 @@ public final class TestRollScreen extends Screen {
 	private static final float REVEAL_RISE_OFFSET_BASE = 20.0f;
 	private static final float REVEAL_TEXT_MARGIN_BASE = 70.0f;
 	private static final float VIGNETTE_FADE_WIDTH_BASE = 240.0f;
+	private static final float QUICK_OPEN_TEXT_SCALE_BASE = 4.0f;
+
+	private static final float QUICK_OPEN_PROGRESS_THRESHOLD = 0.5f;
+	private static final float QUICK_OPEN_FLASH_DURATION_SECONDS = 0.5f;
+	private static final int QUICK_OPEN_TEXT_COLOR = 0xFF3B82F6;
 
 	private final RollCard winner;
 	private final Optional<KuudraTier> tierFilter;
@@ -72,6 +78,7 @@ public final class TestRollScreen extends Screen {
 	private float revealMaxScale;
 	private float revealRiseOffset;
 	private float revealTextMargin;
+	private float quickOpenTextScale;
 
 	private LootReel reel;
 	private RenderPipeline cardPipeline;
@@ -80,6 +87,8 @@ public final class TestRollScreen extends Screen {
 	private PaidChestLocation location;
 	private long startTimeNanos = -1;
 	private long landedTimeNanos = -1;
+	private long quickOpenTriggerNanos = -1;
+	private float quickOpenFrozenElapsedSeconds;
 	private int lastTickIndex;
 	private int circleCenterX;
 	private int cardCenterY;
@@ -108,6 +117,7 @@ public final class TestRollScreen extends Screen {
 		revealMaxScale = REVEAL_MAX_SCALE_BASE * uiScale;
 		revealRiseOffset = REVEAL_RISE_OFFSET_BASE * uiScale;
 		revealTextMargin = REVEAL_TEXT_MARGIN_BASE * uiScale;
+		quickOpenTextScale = QUICK_OPEN_TEXT_SCALE_BASE * uiScale;
 		var cardBarHeight = CARD_BAR_HEIGHT_BASE * uiScale;
 		var cardFadeHeight = CARD_FADE_HEIGHT_BASE * uiScale;
 		var vignetteFadeWidth = VIGNETTE_FADE_WIDTH_BASE * uiScale;
@@ -146,14 +156,14 @@ public final class TestRollScreen extends Screen {
 			startTimeNanos = System.nanoTime();
 		}
 
-		var elapsedSeconds = (System.nanoTime() - startTimeNanos) / 1_000_000_000.0f;
+		var elapsedSeconds = quickOpenTriggerNanos >= 0 ? quickOpenFrozenElapsedSeconds : (System.nanoTime() - startTimeNanos) / 1_000_000_000.0f;
 		var progress = Math.min(1.0f, elapsedSeconds / reelDurationSeconds);
 		var eased = easeOutQuart(progress);
 
 		var cardStep = cardWidth + cardGap;
 		var scrollOffset = scrollStart + (scrollEnd - scrollStart) * eased;
 
-		if (progress < 1.0f) {
+		if (progress < 1.0f && quickOpenTriggerNanos < 0) {
 			playTickIfCardPassed(cardStep, scrollOffset);
 		}
 
@@ -163,6 +173,10 @@ public final class TestRollScreen extends Screen {
 
 		drawPointer(guiGraphics);
 		drawVignette(guiGraphics);
+
+		if (quickOpenTriggerNanos >= 0) {
+			drawQuickOpenFlash(guiGraphics);
+		}
 
 		if (progress >= 1.0f) {
 			if (landedTimeNanos < 0) {
@@ -183,8 +197,8 @@ public final class TestRollScreen extends Screen {
 
 	@Override
 	public boolean keyPressed(KeyEvent event) {
-		if (this.minecraft.options.keyInventory.matches(event)) {
-			onClose();
+		if (this.minecraft.options.keyInventory.matches(event) || event.isEscape()) {
+			requestClose();
 			return true;
 		}
 
@@ -192,8 +206,34 @@ public final class TestRollScreen extends Screen {
 	}
 
 	@Override
+	public void tick() {
+		if (quickOpenTriggerNanos >= 0 && (System.nanoTime() - quickOpenTriggerNanos) / 1_000_000_000.0f >= QUICK_OPEN_FLASH_DURATION_SECONDS) {
+			onClose();
+		}
+	}
+
+	@Override
 	public void onClose() {
 		this.minecraft.setScreen(restoreScreen);
+	}
+
+	private void requestClose() {
+		if (quickOpenTriggerNanos >= 0) {
+			return;
+		}
+
+		var elapsedSeconds = (System.nanoTime() - startTimeNanos) / 1_000_000_000.0f;
+		var progress = Math.min(1.0f, elapsedSeconds / reelDurationSeconds);
+		var config = ConfigManager.getConfig();
+
+		if (progress >= QUICK_OPEN_PROGRESS_THRESHOLD || !config.isQuickOpenEnabled()) {
+			onClose();
+			return;
+		}
+
+		quickOpenFrozenElapsedSeconds = elapsedSeconds;
+		quickOpenTriggerNanos = System.nanoTime();
+		Minecraft.getInstance().getSoundManager().play(SimpleSoundInstance.forUI(DowntimeSounds.QUICK_OPEN, (float) config.getQuickOpenVolume()));
 	}
 
 	@Override
@@ -316,6 +356,18 @@ public final class TestRollScreen extends Screen {
 
 	private void drawVignette(GuiGraphicsExtractor guiGraphics) {
 		RoundedRectangleRenderer.fill(guiGraphics, vignettePipeline, 0, 0, width, height, VIGNETTE_COLOR);
+	}
+
+	private void drawQuickOpenFlash(GuiGraphicsExtractor guiGraphics) {
+		var font = Minecraft.getInstance().font;
+		var text = "Quick Open!";
+		var textWidth = font.width(text);
+
+		guiGraphics.pose().pushMatrix();
+		guiGraphics.pose().translate(circleCenterX, cardCenterY);
+		guiGraphics.pose().scale(quickOpenTextScale, quickOpenTextScale);
+		guiGraphics.text(font, text, -textWidth / 2, -font.lineHeight / 2, QUICK_OPEN_TEXT_COLOR, true);
+		guiGraphics.pose().popMatrix();
 	}
 
 	private void drawIcon(GuiGraphicsExtractor guiGraphics, RollCard entry, float iconCenterX, float iconCenterY) {

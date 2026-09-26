@@ -12,6 +12,8 @@ public class Config {
 	private double blurStrength = 1.0;
 	private boolean tickerSoundEnabled = true;
 	private double tickerSoundVolume = 1.0;
+	private boolean quickOpenEnabled = true;
+	private double quickOpenVolume = 1.0;
 	private double baitChanceMin = 0.05;
 	private double baitChanceMax = 0.25;
 	private boolean downtimeTrackerEnabled = true;

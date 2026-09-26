@@ -31,7 +31,7 @@ public final class DowntimeScreen extends Screen {
 	private static final float OPEN_ANIMATION_SPEED = 0.18f;
 	private static final float REFERENCE_GUI_SCALE = 3.0f;
 	private static final float REFERENCE_SCALE_FACTOR = 0.65f;
-	private static final int ROW_COUNT = 7;
+	private static final int ROW_COUNT = 9;
 
 	private static final float CORNER_RADIUS_BASE = 6.0f;
 	private static final int TOP_BAR_HEIGHT_BASE = 29;
@@ -197,6 +197,10 @@ public final class DowntimeScreen extends Screen {
 		toggles.add(new ToggleControl("Ticker Sound", y, config::isTickerSoundEnabled, config::setTickerSoundEnabled));
 		y += rowHeight + rowGap;
 		sliders.add(new SliderControl("Ticker Sound Volume", y, config::getTickerSoundVolume, config::setTickerSoundVolume, 0.0, 1.0, value -> "%.0f%%".formatted(value * 100.0)));
+		y += rowHeight + rowGap;
+		toggles.add(new ToggleControl("Quick Open", y, config::isQuickOpenEnabled, config::setQuickOpenEnabled));
+		y += rowHeight + rowGap;
+		sliders.add(new SliderControl("Quick Open Volume", y, config::getQuickOpenVolume, config::setQuickOpenVolume, 0.0, 1.0, value -> "%.0f%%".formatted(value * 100.0)));
 		y += rowHeight + rowGap;
 		rangeSliders.add(new RangeSliderControl("Bait Chance", y, config::getBaitChanceMin, config::setBaitChanceMin, config::getBaitChanceMax, config::setBaitChanceMax, 0.0, 1.0, value -> "%.0f%%".formatted(value * 100.0)));
 		y += rowHeight + rowGap;
