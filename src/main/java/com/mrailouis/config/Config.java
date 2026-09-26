@@ -15,5 +15,11 @@ public class Config {
 	private double baitChanceMin = 0.05;
 	private double baitChanceMax = 0.25;
 	private boolean downtimeTrackerEnabled = true;
-	private double totalDowntimeSeconds = 0.0;
+	private double kuudraDowntimeSeconds = 0.0;
+	private double vesuviusDowntimeSeconds = 0.0;
+	private double croesusDowntimeSeconds = 0.0;
+
+	public double getTotalDowntimeSeconds() {
+		return kuudraDowntimeSeconds + vesuviusDowntimeSeconds + croesusDowntimeSeconds;
+	}
 }

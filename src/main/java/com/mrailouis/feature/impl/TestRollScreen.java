@@ -3,8 +3,10 @@ package com.mrailouis.feature.impl;
 import com.mojang.blaze3d.pipeline.RenderPipeline;
 import com.mrailouis.Downtime;
 import com.mrailouis.api.RollCard;
+import com.mrailouis.compat.HypixelLocationTracker;
 import com.mrailouis.config.ConfigManager;
 import com.mrailouis.data.KuudraTier;
+import com.mrailouis.data.PaidChestLocation;
 import com.mrailouis.extensions.net.minecraft.client.gui.GuiGraphicsExtractor.GuiGraphicsExtractorExtensions;
 import com.mrailouis.shader.DowntimeRenderPipelines;
 import com.mrailouis.shader.RoundedRectangleRenderer;
@@ -75,6 +77,7 @@ public final class TestRollScreen extends Screen {
 	private RenderPipeline cardPipeline;
 	private RenderPipeline pointerPipeline;
 	private RenderPipeline vignettePipeline;
+	private PaidChestLocation location;
 	private long startTimeNanos = -1;
 	private long landedTimeNanos = -1;
 	private int lastTickIndex;
@@ -111,6 +114,7 @@ public final class TestRollScreen extends Screen {
 
 		circleCenterX = Math.round(width * 0.5f);
 		cardCenterY = Math.round(height * 0.5f);
+		location = HypixelLocationTracker.currentPaidChestLocation();
 
 		var config = ConfigManager.getConfig();
 		reelDurationSeconds = (float) config.getCaseOpeningAnimationDurationSeconds();
@@ -197,7 +201,13 @@ public final class TestRollScreen extends Screen {
 		var config = ConfigManager.getConfig();
 		if (config.isDowntimeTrackerEnabled() && startTimeNanos >= 0) {
 			var watchedSeconds = Math.min((System.nanoTime() - startTimeNanos) / 1_000_000_000.0, reelDurationSeconds + REVEAL_DURATION_SECONDS);
-			config.setTotalDowntimeSeconds(config.getTotalDowntimeSeconds() + watchedSeconds);
+			switch (location) {
+				case KUUDRA -> config.setKuudraDowntimeSeconds(config.getKuudraDowntimeSeconds() + watchedSeconds);
+				case VESUVIUS -> config.setVesuviusDowntimeSeconds(config.getVesuviusDowntimeSeconds() + watchedSeconds);
+				case CROESUS -> config.setCroesusDowntimeSeconds(config.getCroesusDowntimeSeconds() + watchedSeconds);
+				case UNKNOWN -> {
+				}
+			}
 			ConfigManager.save();
 		}
 

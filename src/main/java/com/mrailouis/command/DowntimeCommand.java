@@ -15,6 +15,7 @@ import net.minecraft.network.chat.Component;
 public final class DowntimeCommand {
 	private static final int GRADIENT_FROM_RGB = 0xFF0000;
 	private static final int GRADIENT_TO_RGB = 0xFFFF00;
+	private static final double US_MINIMUM_WAGE_PER_HOUR = 7.25;
 
 	private DowntimeCommand() {
 	}
@@ -34,16 +35,25 @@ public final class DowntimeCommand {
 	}
 
 	private static int runTime(CommandContext<FabricClientCommandSource> context) {
-		var totalSeconds = ConfigManager.getConfig().getTotalDowntimeSeconds();
-		var duration = DurationFormatter.format(totalSeconds);
+		var config = ConfigManager.getConfig();
+		var kuudraSeconds = config.getKuudraDowntimeSeconds();
+		var vesuviusSeconds = config.getVesuviusDowntimeSeconds();
+		var croesusSeconds = config.getCroesusDowntimeSeconds();
+		var totalSeconds = kuudraSeconds + vesuviusSeconds + croesusSeconds;
 
-		// idk better method for this but if it works it works
-		var message = Component.literal("[").withStyle(ChatFormatting.DARK_GRAY)
+		var prefix = Component.literal("[").withStyle(ChatFormatting.DARK_GRAY)
 				.append(GradientText.of("mrai", GRADIENT_FROM_RGB, GRADIENT_TO_RGB))
-				.append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY))
-				.append(Component.literal(" Hey little chuddy! You've wasted " + duration + " watching kuudra chest gamba!").withStyle(ChatFormatting.GRAY));
+				.append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY));
 
-		context.getSource().sendFeedback(message);
+		context.getSource().sendFeedback(prefix.copy()
+				.append(Component.literal(" Hey little chuddy! You've wasted " + DurationFormatter.format(totalSeconds) + " watching paid chest gamba!").withStyle(ChatFormatting.GRAY)));
+		context.getSource().sendFeedback(Component.literal("  Kuudra: " + DurationFormatter.format(kuudraSeconds)).withStyle(ChatFormatting.GRAY));
+		context.getSource().sendFeedback(Component.literal("  Vesuvius: " + DurationFormatter.format(vesuviusSeconds)).withStyle(ChatFormatting.GRAY));
+		context.getSource().sendFeedback(Component.literal("  Croesus: " + DurationFormatter.format(croesusSeconds)).withStyle(ChatFormatting.GRAY));
+
+		var minimumWageEarnings = (totalSeconds / 3600.0) * US_MINIMUM_WAGE_PER_HOUR;
+		context.getSource().sendFeedback(Component.literal("In the USA, with a minimum wage job you would have made: $" + "%.2f".formatted(minimumWageEarnings)).withStyle(ChatFormatting.GOLD));
+
 		return 1;
 	}
 }
