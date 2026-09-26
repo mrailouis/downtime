@@ -55,7 +55,6 @@ dependencies {
 
 	//soft-compat, never required at runtime
 	compileOnly("maven.modrinth:modmenu:${providers.gradleProperty("modmenu_version").get()}")
-	compileOnly("maven.modrinth:yacl:${providers.gradleProperty("yacl_version").get()}")
 
 	//lombok my beloved <3
 	compileOnly("org.projectlombok:lombok:${providers.gradleProperty("lombok_version").get()}")

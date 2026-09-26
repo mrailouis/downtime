@@ -21,6 +21,9 @@
 		],
 		"client": [
 			"com.mrailouis.DowntimeClient"
+		],
+		"modmenu": [
+			"com.mrailouis.compat.modmenu.DowntimeModMenuApi"
 		]
 	},
 	"mixins": [
