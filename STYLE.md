@@ -25,8 +25,4 @@
 - `extensions/<original package>/<ClassName>` — static extension classes for a type from another package, mirroring that type's package path (e.g. `extensions/net/minecraft/world/item/ItemStack/ItemStackExtensions.java`).
 - Never put implementation details in `api`, and never put reusable/public types in `impl`.
 
-## Annotation Processors
-- Custom annotation processors live in the separate `annotation-processor` Gradle module, written in Java.
-- Register new processors via `META-INF/services/javax.annotation.processing.Processor` and consume them from the main project as an `annotationProcessor` dependency.
-
 

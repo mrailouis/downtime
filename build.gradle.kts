@@ -64,8 +64,6 @@ dependencies {
 	compileOnly("org.projectlombok:lombok:${providers.gradleProperty("lombok_version").get()}")
 	annotationProcessor("org.projectlombok:lombok:${providers.gradleProperty("lombok_version").get()}")
 
-	annotationProcessor(project(":annotation-processor"))
-
 	//devauth
 	runtimeOnly("me.djtheredstoner:DevAuth-fabric:${providers.gradleProperty("devauth_version").get()}")
 }

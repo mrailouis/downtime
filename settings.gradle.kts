@@ -16,5 +16,3 @@ pluginManagement {
 
 // Should match your modid
 rootProject.name = "downtime"
-
-include("annotation-processor")
