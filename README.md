@@ -5,7 +5,7 @@
 # Downtime
 
 [![Latest Release](https://img.shields.io/github/v/release/mrailouis/downtime?style=flat-square&label=release)](https://github.com/mrailouis/downtime/releases)
-[![Modrinth](https://img.shields.io/badge/modrinth-awaiting%20approval-1bd96a?style=flat-square&logo=modrinth&logoColor=white)](https://modrinth.com/)
+[![Modrinth](https://img.shields.io/modrinth/v/downtime?style=flat-square&logo=modrinth&logoColor=white&label=modrinth)](https://modrinth.com/project/downtime)
 [![License](https://img.shields.io/github/license/mrailouis/downtime?style=flat-square)](LICENSE)
 [![Minecraft](https://img.shields.io/badge/minecraft-26.1.2-blue?style=flat-square)](https://www.minecraft.net/)
 [![Fabric](https://img.shields.io/badge/Fabric-%3E%3D0.19.3-dbb69c?style=flat-square)](https://fabricmc.net/)

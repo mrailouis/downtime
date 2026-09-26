@@ -47,7 +47,7 @@ public final class TestRollScreen extends Screen {
 	private static final int CARD_GAP_BASE = 14;
 	private static final float CARD_BAR_HEIGHT_BASE = 6.0f;
 	private static final float CARD_FADE_HEIGHT_BASE = 36.0f;
-	private static final float ICON_SCALE_BASE = 2.4f;
+	private static final float ICON_SCALE_BASE = 4.8f;
 	private static final int DOWNTIME_STAT_MARGIN_BASE = 10;
 	private static final int POINTER_WIDTH_BASE = 3;
 	private static final float REVEAL_MIN_SCALE_BASE = 5.0f;
