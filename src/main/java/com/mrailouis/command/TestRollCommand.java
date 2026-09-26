@@ -19,6 +19,7 @@ import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 
+// debugging, ignore
 public final class TestRollCommand {
 	private static final Random RANDOM = new Random();
 

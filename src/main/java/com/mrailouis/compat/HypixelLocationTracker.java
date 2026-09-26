@@ -4,6 +4,7 @@ import java.util.Locale;
 import net.hypixel.modapi.HypixelModAPI;
 import net.hypixel.modapi.packet.impl.clientbound.event.ClientboundLocationPacket;
 
+
 public final class HypixelLocationTracker {
 	private static volatile ClientboundLocationPacket latest;
 

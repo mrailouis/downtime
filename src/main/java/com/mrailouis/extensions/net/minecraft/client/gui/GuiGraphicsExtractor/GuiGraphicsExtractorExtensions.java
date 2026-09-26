@@ -4,6 +4,8 @@ import com.mrailouis.api.PostEffectHolder;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.resources.Identifier;
 
+
+// modern version slop
 public final class GuiGraphicsExtractorExtensions {
 	private GuiGraphicsExtractorExtensions() {
 	}

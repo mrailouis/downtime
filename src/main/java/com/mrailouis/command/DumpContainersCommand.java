@@ -7,6 +7,8 @@ import net.fabricmc.fabric.api.client.command.v2.ClientCommands;
 import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
 import net.minecraft.network.chat.Component;
 
+
+// debugging, ignore
 public final class DumpContainersCommand {
 	private DumpContainersCommand() {
 	}

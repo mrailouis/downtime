@@ -42,6 +42,7 @@ public final class PaidChestLoreHider {
 			}
 
 			var lore = stack.get(DataComponents.LORE);
+			// hidden loot lore
 			if (lore != null && lore.lines().size() == 1 && lore.lines().getFirst().getString().equals(HIDDEN_LORE_TEXT)) {
 				continue;
 			}

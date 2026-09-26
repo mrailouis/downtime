@@ -8,7 +8,7 @@ import net.minecraft.world.scores.DisplaySlot;
 
 public final class KuudraTierTracker {
 	private static final Pattern TIER_PATTERN = Pattern.compile("\\(T([1-5])\\)");
-
+	// need more elegant method
 	private KuudraTierTracker() {
 	}
 

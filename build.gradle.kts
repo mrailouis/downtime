@@ -56,6 +56,10 @@ dependencies {
 	//soft-compat, never required at runtime
 	compileOnly("maven.modrinth:modmenu:${providers.gradleProperty("modmenu_version").get()}")
 
+	//dev-instance only, so modmenu/yacl are loaded when running the client for testing
+	localRuntime("maven.modrinth:modmenu:${providers.gradleProperty("modmenu_version").get()}")
+	localRuntime("maven.modrinth:yacl:${providers.gradleProperty("yacl_version").get()}")
+
 	//lombok my beloved <3
 	compileOnly("org.projectlombok:lombok:${providers.gradleProperty("lombok_version").get()}")
 	annotationProcessor("org.projectlombok:lombok:${providers.gradleProperty("lombok_version").get()}")

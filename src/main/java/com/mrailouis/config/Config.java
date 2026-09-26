@@ -5,6 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
+// default
 public class Config {
 	private boolean caseOpeningAnimationEnabled = true;
 	private double caseOpeningAnimationDurationSeconds = 6.5;

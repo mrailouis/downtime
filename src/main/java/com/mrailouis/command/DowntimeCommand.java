@@ -37,6 +37,7 @@ public final class DowntimeCommand {
 		var totalSeconds = ConfigManager.getConfig().getTotalDowntimeSeconds();
 		var duration = DurationFormatter.format(totalSeconds);
 
+		// idk better method for this but if it works it works
 		var message = Component.literal("[").withStyle(ChatFormatting.DARK_GRAY)
 				.append(GradientText.of("mrai", GRADIENT_FROM_RGB, GRADIENT_TO_RGB))
 				.append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY))

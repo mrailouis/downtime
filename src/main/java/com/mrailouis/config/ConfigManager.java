@@ -13,6 +13,7 @@ import lombok.Getter;
 import net.fabricmc.loader.api.FabricLoader;
 
 public final class ConfigManager {
+	// atomic
 	private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 	private static final Path CONFIG_PATH = FabricLoader.getInstance().getConfigDir().resolve("downtime.json");
 

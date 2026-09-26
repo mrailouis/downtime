@@ -20,6 +20,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.renderer.texture.DynamicTexture;
 
+// wishing i had lib
 public final class AwtFontRenderer {
 	private static final int RASTER_MARGIN_X = 5;
 	private static final int RASTER_MARGIN_TOP = 2;
