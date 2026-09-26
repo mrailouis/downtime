@@ -9,6 +9,7 @@ import com.mrailouis.extensions.net.minecraft.client.gui.GuiGraphicsExtractor.Gu
 import com.mrailouis.shader.DowntimeRenderPipelines;
 import com.mrailouis.shader.RoundedRectangleRenderer;
 import com.mrailouis.utils.DurationFormatter;
+import com.mrailouis.utils.GuiScaleUtils;
 import java.util.Optional;
 import java.util.Random;
 import net.minecraft.client.Minecraft;
@@ -21,42 +22,59 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.sounds.SoundEvents;
 // debug
 public final class TestRollScreen extends Screen {
-	private static final int CARD_WIDTH = 115;
-	private static final int CARD_HEIGHT = 77;
-	private static final int CARD_GAP = 14;
 	private static final float CARD_RADIUS = 0.0f;
-	private static final float CARD_BAR_HEIGHT = 6.0f;
-	private static final float CARD_FADE_HEIGHT = 36.0f;
-	private static final float ICON_SCALE = 2.4f;
-
 	private static final float REEL_FADE_ZONE_FRACTION = 0.2f;
 	private static final float BLUR_STRENGTH_LOW_THRESHOLD = 0.33f;
 	private static final float BLUR_STRENGTH_NORMAL_THRESHOLD = 0.66f;
-	private static final int DOWNTIME_STAT_MARGIN = 10;
 	private static final int DOWNTIME_STAT_COLOR = 0xFFAAAAAA;
 
 	private static final int MIN_FILLER_BEFORE_WINNER = 30;
 	private static final int SCREEN_WIDTH_COVERAGE_MARGIN = 4;
 
-	private static final int POINTER_WIDTH = 3;
 	private static final int POINTER_COLOR = 0xFFFFD500;
 	private static final float CIRCLE_ZOOM = 1.6f;
 
 	private static final float LANDING_JITTER_FRACTION = 0.3f;
 
 	private static final float REVEAL_DURATION_SECONDS = 0.4f;
-	private static final float REVEAL_MIN_SCALE = 5.0f;
-	private static final float REVEAL_MAX_SCALE = 9.0f;
-	private static final float REVEAL_RISE_OFFSET = 20.0f;
-	private static final float REVEAL_TEXT_MARGIN = 70.0f;
+
+	private static final int VIGNETTE_COLOR = 0xCC000000;
+
+	private static final float REFERENCE_GUI_SCALE = 3.0f;
+
+	private static final int CARD_WIDTH_BASE = 115;
+	private static final int CARD_HEIGHT_BASE = 77;
+	private static final int CARD_GAP_BASE = 14;
+	private static final float CARD_BAR_HEIGHT_BASE = 6.0f;
+	private static final float CARD_FADE_HEIGHT_BASE = 36.0f;
+	private static final float ICON_SCALE_BASE = 2.4f;
+	private static final int DOWNTIME_STAT_MARGIN_BASE = 10;
+	private static final int POINTER_WIDTH_BASE = 3;
+	private static final float REVEAL_MIN_SCALE_BASE = 5.0f;
+	private static final float REVEAL_MAX_SCALE_BASE = 9.0f;
+	private static final float REVEAL_RISE_OFFSET_BASE = 20.0f;
+	private static final float REVEAL_TEXT_MARGIN_BASE = 70.0f;
+	private static final float VIGNETTE_FADE_WIDTH_BASE = 240.0f;
 
 	private final RollCard winner;
 	private final Optional<KuudraTier> tierFilter;
 	private final Screen restoreScreen;
 
+	private int cardWidth;
+	private int cardHeight;
+	private int cardGap;
+	private float iconScale;
+	private int downtimeStatMargin;
+	private int pointerWidth;
+	private float revealMinScale;
+	private float revealMaxScale;
+	private float revealRiseOffset;
+	private float revealTextMargin;
+
 	private LootReel reel;
 	private RenderPipeline cardPipeline;
 	private RenderPipeline pointerPipeline;
+	private RenderPipeline vignettePipeline;
 	private long startTimeNanos = -1;
 	private long landedTimeNanos = -1;
 	private int lastTickIndex;
@@ -75,26 +93,43 @@ public final class TestRollScreen extends Screen {
 
 	@Override
 	protected void init() {
+		var uiScale = GuiScaleUtils.compensate(REFERENCE_GUI_SCALE);
+
+		cardWidth = Math.round(CARD_WIDTH_BASE * uiScale);
+		cardHeight = Math.round(CARD_HEIGHT_BASE * uiScale);
+		cardGap = Math.round(CARD_GAP_BASE * uiScale);
+		iconScale = ICON_SCALE_BASE * uiScale;
+		downtimeStatMargin = Math.round(DOWNTIME_STAT_MARGIN_BASE * uiScale);
+		pointerWidth = Math.round(POINTER_WIDTH_BASE * uiScale);
+		revealMinScale = REVEAL_MIN_SCALE_BASE * uiScale;
+		revealMaxScale = REVEAL_MAX_SCALE_BASE * uiScale;
+		revealRiseOffset = REVEAL_RISE_OFFSET_BASE * uiScale;
+		revealTextMargin = REVEAL_TEXT_MARGIN_BASE * uiScale;
+		var cardBarHeight = CARD_BAR_HEIGHT_BASE * uiScale;
+		var cardFadeHeight = CARD_FADE_HEIGHT_BASE * uiScale;
+		var vignetteFadeWidth = VIGNETTE_FADE_WIDTH_BASE * uiScale;
+
 		circleCenterX = Math.round(width * 0.5f);
 		cardCenterY = Math.round(height * 0.5f);
 
 		var config = ConfigManager.getConfig();
 		reelDurationSeconds = (float) config.getCaseOpeningAnimationDurationSeconds();
 
-		var cardStep = CARD_WIDTH + CARD_GAP;
+		var cardStep = cardWidth + cardGap;
 		var cardsToSpanScreen = (int) Math.ceil((double) width / cardStep) + SCREEN_WIDTH_COVERAGE_MARGIN;
 		var fillerBeforeWinner = Math.max(MIN_FILLER_BEFORE_WINNER, cardsToSpanScreen);
 		var fillerAfterWinner = (int) Math.ceil((double) (width - circleCenterX) / cardStep) + SCREEN_WIDTH_COVERAGE_MARGIN;
 
 		var random = new Random();
 		reel = LootReel.build(winner, fillerBeforeWinner, fillerAfterWinner, tierFilter, config.getBaitChanceMin(), config.getBaitChanceMax(), random);
-		var landingJitter = (random.nextFloat() * 2.0f - 1.0f) * CARD_WIDTH * LANDING_JITTER_FRACTION;
+		var landingJitter = (random.nextFloat() * 2.0f - 1.0f) * cardWidth * LANDING_JITTER_FRACTION;
 		scrollStart = 0.0f;
 		scrollEnd = reel.winnerIndex() * cardStep - circleCenterX + landingJitter;
 		lastTickIndex = Math.round((circleCenterX + scrollStart) / cardStep);
 
-		cardPipeline = DowntimeRenderPipelines.itemCard("gui_test_roll_card", CARD_WIDTH, CARD_HEIGHT, CARD_RADIUS, CARD_BAR_HEIGHT, CARD_FADE_HEIGHT);
-		pointerPipeline = DowntimeRenderPipelines.roundedRectangle("gui_test_roll_pointer", POINTER_WIDTH, CARD_HEIGHT * CIRCLE_ZOOM, 0.0f);
+		cardPipeline = DowntimeRenderPipelines.itemCard("gui_test_roll_card", cardWidth, cardHeight, CARD_RADIUS, cardBarHeight, cardFadeHeight);
+		pointerPipeline = DowntimeRenderPipelines.roundedRectangle("gui_test_roll_pointer", pointerWidth, cardHeight * CIRCLE_ZOOM, 0.0f);
+		vignettePipeline = DowntimeRenderPipelines.vignette("gui_test_roll_vignette", width, height, vignetteFadeWidth);
 	}
 
 	@Override
@@ -111,7 +146,7 @@ public final class TestRollScreen extends Screen {
 		var progress = Math.min(1.0f, elapsedSeconds / reelDurationSeconds);
 		var eased = easeOutQuart(progress);
 
-		var cardStep = CARD_WIDTH + CARD_GAP;
+		var cardStep = cardWidth + cardGap;
 		var scrollOffset = scrollStart + (scrollEnd - scrollStart) * eased;
 
 		if (progress < 1.0f) {
@@ -123,6 +158,7 @@ public final class TestRollScreen extends Screen {
 		GuiGraphicsExtractorExtensions.applyPostEffect(guiGraphics, blurPostEffectId());
 
 		drawPointer(guiGraphics);
+		drawVignette(guiGraphics);
 
 		if (progress >= 1.0f) {
 			if (landedTimeNanos < 0) {
@@ -188,7 +224,7 @@ public final class TestRollScreen extends Screen {
 		var font = Minecraft.getInstance().font;
 		var text = "Downtime: " + DurationFormatter.format(config.getTotalDowntimeSeconds() + elapsedSeconds);
 		var textWidth = font.width(text);
-		guiGraphics.text(font, text, (width - textWidth) / 2, DOWNTIME_STAT_MARGIN, DOWNTIME_STAT_COLOR, true);
+		guiGraphics.text(font, text, (width - textWidth) / 2, downtimeStatMargin, DOWNTIME_STAT_COLOR, true);
 	}
 
 	private void drawReel(GuiGraphicsExtractor guiGraphics, int cardStep, float scrollOffset) {
@@ -197,9 +233,9 @@ public final class TestRollScreen extends Screen {
 
 		for (var index = 0; index < entries.size(); index++) {
 			var cardCenterX = index * cardStep - scrollOffset;
-			var cardLeft = cardCenterX - CARD_WIDTH / 2.0f;
+			var cardLeft = cardCenterX - cardWidth / 2.0f;
 
-			if (cardLeft + CARD_WIDTH < 0 || cardLeft > width) {
+			if (cardLeft + cardWidth < 0 || cardLeft > width) {
 				continue;
 			}
 
@@ -209,11 +245,11 @@ public final class TestRollScreen extends Screen {
 			}
 
 			var entry = entries.get(index);
-			var cardTop = cardCenterY - CARD_HEIGHT / 2.0f;
+			var cardTop = cardCenterY - cardHeight / 2.0f;
 			var color = withAlpha(entry.rarity().color(), fadeAlpha);
 
-			RoundedRectangleRenderer.fill(guiGraphics, cardPipeline, cardLeft, cardTop, CARD_WIDTH, CARD_HEIGHT, color);
-			drawIcon(guiGraphics, entry, cardCenterX, cardTop + CARD_HEIGHT * 0.42f);
+			RoundedRectangleRenderer.fill(guiGraphics, cardPipeline, cardLeft, cardTop, cardWidth, cardHeight, color);
+			drawIcon(guiGraphics, entry, cardCenterX, cardTop + cardHeight * 0.42f);
 		}
 	}
 
@@ -249,9 +285,9 @@ public final class TestRollScreen extends Screen {
 		var font = Minecraft.getInstance().font;
 		var text = winner.displayName();
 		var textWidth = font.width(text);
-		var scale = REVEAL_MIN_SCALE + (REVEAL_MAX_SCALE - REVEAL_MIN_SCALE) * eased;
-		var riseOffset = REVEAL_RISE_OFFSET * (1.0f - eased);
-		var textY = cardCenterY - CARD_HEIGHT / 2.0f - REVEAL_TEXT_MARGIN + riseOffset;
+		var scale = revealMinScale + (revealMaxScale - revealMinScale) * eased;
+		var riseOffset = revealRiseOffset * (1.0f - eased);
+		var textY = cardCenterY - cardHeight / 2.0f - revealTextMargin + riseOffset;
 		var color = withAlpha(winner.rarity().color(), eased);
 
 		guiGraphics.pose().pushMatrix();
@@ -262,16 +298,20 @@ public final class TestRollScreen extends Screen {
 	}
 
 	private void drawPointer(GuiGraphicsExtractor guiGraphics) {
-		var pointerHeight = CARD_HEIGHT * CIRCLE_ZOOM;
-		var pointerLeft = circleCenterX - POINTER_WIDTH / 2.0f;
+		var pointerHeight = cardHeight * CIRCLE_ZOOM;
+		var pointerLeft = circleCenterX - pointerWidth / 2.0f;
 		var pointerTop = cardCenterY - pointerHeight / 2.0f;
-		RoundedRectangleRenderer.fill(guiGraphics, pointerPipeline, pointerLeft, pointerTop, POINTER_WIDTH, pointerHeight, POINTER_COLOR);
+		RoundedRectangleRenderer.fill(guiGraphics, pointerPipeline, pointerLeft, pointerTop, pointerWidth, pointerHeight, POINTER_COLOR);
+	}
+
+	private void drawVignette(GuiGraphicsExtractor guiGraphics) {
+		RoundedRectangleRenderer.fill(guiGraphics, vignettePipeline, 0, 0, width, height, VIGNETTE_COLOR);
 	}
 
 	private void drawIcon(GuiGraphicsExtractor guiGraphics, RollCard entry, float iconCenterX, float iconCenterY) {
 		guiGraphics.pose().pushMatrix();
 		guiGraphics.pose().translate(iconCenterX, iconCenterY);
-		guiGraphics.pose().scale(ICON_SCALE, ICON_SCALE);
+		guiGraphics.pose().scale(iconScale, iconScale);
 		guiGraphics.item(entry.icon(), -8, -8);
 		guiGraphics.pose().popMatrix();
 	}

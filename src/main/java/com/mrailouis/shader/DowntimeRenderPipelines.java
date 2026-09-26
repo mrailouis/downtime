@@ -61,6 +61,19 @@ public final class DowntimeRenderPipelines {
 				.build());
 	}
 
+	public static RenderPipeline vignette(String name, float width, float height, float fadeWidth) {
+		return RenderPipelines.register(RenderPipeline.builder(RenderPipelines.GUI_SNIPPET)
+				.withLocation(Downtime.id("pipeline/" + name))
+				.withVertexShader(Downtime.id("core/gui_rounded_rectangle"))
+				.withFragmentShader(Downtime.id("core/gui_vignette"))
+				.withShaderDefine("RECT_WIDTH", width)
+				.withShaderDefine("RECT_HEIGHT", height)
+				.withShaderDefine("FADE_WIDTH", fadeWidth)
+				.withColorTargetState(new ColorTargetState(BlendFunction.TRANSLUCENT))
+				.withVertexFormat(DefaultVertexFormat.POSITION_TEX_COLOR, VertexFormat.Mode.QUADS)
+				.build());
+	}
+
 	private static RenderPipeline roundedRectangle(String name, float width, float height, float radius, float shadowWidth) {
 		return RenderPipelines.register(RenderPipeline.builder(RenderPipelines.GUI_SNIPPET)
 				.withLocation(Downtime.id("pipeline/" + name))
