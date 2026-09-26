@@ -13,6 +13,10 @@ public final class KuudraTierTracker {
 	}
 
 	public static Optional<KuudraTier> currentTier() {
+		if (!HypixelLocationTracker.isLikelyInKuudra()) {
+			return Optional.empty();
+		}
+
 		var minecraft = Minecraft.getInstance();
 		var level = minecraft.level;
 		if (level == null) {
