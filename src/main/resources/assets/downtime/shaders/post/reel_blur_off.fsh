@@ -15,19 +15,22 @@ const float CIRCLE_RADIUS = 0.275;
 const float CIRCLE_EDGE_SOFTNESS = 0.004;
 const float CIRCLE_OVERLAY_ALPHA = 0.25;
 const float DARKEN_AMOUNT = 0.2;
-const float BLUR_STRENGTH = 1.0;
-const int TAP_DIRECTIONS = 12;
-const float ANGLE_STEP = 6.28318530718 / float(TAP_DIRECTIONS);
-const float RING_ROTATION = 0.26179938780;
+const float DIAGONAL = 0.70710678;
+const float BLUR_STRENGTH = 0.0;
 
-vec4 kawaseTap(vec2 uv, vec2 texel, float radius, float angleOffset) {
+vec4 kawaseTap(vec2 uv, vec2 texel, float radius) {
+    vec2 axis = texel * (radius + 0.5);
+    vec2 diag = axis * DIAGONAL;
     vec4 sum = vec4(0.0);
-    for (int i = 0; i < TAP_DIRECTIONS; i++) {
-        float angle = angleOffset + float(i) * ANGLE_STEP;
-        vec2 offset = texel * (radius + 0.5) * vec2(cos(angle), sin(angle));
-        sum += texture(InSampler, uv + offset);
-    }
-    return sum / float(TAP_DIRECTIONS);
+    sum += texture(InSampler, uv + vec2(axis.x, 0.0));
+    sum += texture(InSampler, uv + vec2(-axis.x, 0.0));
+    sum += texture(InSampler, uv + vec2(0.0, axis.y));
+    sum += texture(InSampler, uv + vec2(0.0, -axis.y));
+    sum += texture(InSampler, uv + vec2(diag.x, diag.y));
+    sum += texture(InSampler, uv + vec2(-diag.x, diag.y));
+    sum += texture(InSampler, uv + vec2(diag.x, -diag.y));
+    sum += texture(InSampler, uv + vec2(-diag.x, -diag.y));
+    return sum * 0.125;
 }
 
 void main() {
@@ -48,14 +51,14 @@ void main() {
 
     vec2 texel = 1.0 / InSize;
     vec4 blurred = vec4(0.0);
-    blurred += kawaseTap(texCoord, texel, 2.0 * BLUR_STRENGTH, 0.0);
-    blurred += kawaseTap(texCoord, texel, 5.0 * BLUR_STRENGTH, RING_ROTATION);
-    blurred += kawaseTap(texCoord, texel, 8.0 * BLUR_STRENGTH, 0.0);
-    blurred += kawaseTap(texCoord, texel, 11.0 * BLUR_STRENGTH, RING_ROTATION);
-    blurred += kawaseTap(texCoord, texel, 14.0 * BLUR_STRENGTH, 0.0);
-    blurred += kawaseTap(texCoord, texel, 17.0 * BLUR_STRENGTH, RING_ROTATION);
-    blurred += kawaseTap(texCoord, texel, 20.0 * BLUR_STRENGTH, 0.0);
-    blurred += kawaseTap(texCoord, texel, 23.0 * BLUR_STRENGTH, RING_ROTATION);
+    blurred += kawaseTap(texCoord, texel, 2.0 * BLUR_STRENGTH);
+    blurred += kawaseTap(texCoord, texel, 5.0 * BLUR_STRENGTH);
+    blurred += kawaseTap(texCoord, texel, 8.0 * BLUR_STRENGTH);
+    blurred += kawaseTap(texCoord, texel, 11.0 * BLUR_STRENGTH);
+    blurred += kawaseTap(texCoord, texel, 14.0 * BLUR_STRENGTH);
+    blurred += kawaseTap(texCoord, texel, 17.0 * BLUR_STRENGTH);
+    blurred += kawaseTap(texCoord, texel, 20.0 * BLUR_STRENGTH);
+    blurred += kawaseTap(texCoord, texel, 23.0 * BLUR_STRENGTH);
     blurred *= 0.125;
 
     vec4 color = mix(texture(InSampler, texCoord), blurred, mask);

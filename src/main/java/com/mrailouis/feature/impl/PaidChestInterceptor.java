@@ -1,6 +1,7 @@
 package com.mrailouis.feature.impl;
 
 import com.mrailouis.compat.KuudraTierTracker;
+import com.mrailouis.config.ConfigManager;
 import com.mrailouis.data.SkyblockRarity;
 import com.mrailouis.utils.SkyblockRarityParser;
 import java.util.Map;
@@ -34,7 +35,7 @@ public final class PaidChestInterceptor {
 	}
 
 	private static void tryIntercept(AbstractContainerScreen<?> containerScreen) {
-		if (Minecraft.getInstance().screen != containerScreen) {
+		if (!ConfigManager.getConfig().isCaseOpeningAnimationEnabled() || Minecraft.getInstance().screen != containerScreen) {
 			return;
 		}
 

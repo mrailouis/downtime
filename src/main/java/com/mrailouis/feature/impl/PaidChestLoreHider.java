@@ -1,5 +1,6 @@
 package com.mrailouis.feature.impl;
 
+import com.mrailouis.config.ConfigManager;
 import java.util.List;
 import net.fabricmc.fabric.api.client.screen.v1.ScreenEvents;
 import net.minecraft.client.gui.screens.Screen;
@@ -30,6 +31,10 @@ public final class PaidChestLoreHider {
 	}
 
 	private static void hideLoreIfPresent(AbstractContainerScreen<?> screen) {
+		if (!ConfigManager.getConfig().isCaseOpeningAnimationEnabled()) {
+			return;
+		}
+
 		for (var slot : screen.getMenu().slots) {
 			var stack = slot.getItem();
 			if (stack.isEmpty() || !stack.getHoverName().getString().equals(PAID_CHEST_ITEM_NAME)) {

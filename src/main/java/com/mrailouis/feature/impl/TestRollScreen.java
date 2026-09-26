@@ -3,10 +3,12 @@ package com.mrailouis.feature.impl;
 import com.mojang.blaze3d.pipeline.RenderPipeline;
 import com.mrailouis.Downtime;
 import com.mrailouis.api.RollCard;
+import com.mrailouis.config.ConfigManager;
 import com.mrailouis.data.KuudraTier;
 import com.mrailouis.extensions.net.minecraft.client.gui.GuiGraphicsExtractor.GuiGraphicsExtractorExtensions;
 import com.mrailouis.shader.DowntimeRenderPipelines;
 import com.mrailouis.shader.RoundedRectangleRenderer;
+import com.mrailouis.utils.DurationFormatter;
 import java.util.Optional;
 import java.util.Random;
 import net.minecraft.client.Minecraft;
@@ -15,6 +17,7 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.input.KeyEvent;
 import net.minecraft.client.resources.sounds.SimpleSoundInstance;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
 import net.minecraft.sounds.SoundEvents;
 
 public final class TestRollScreen extends Screen {
@@ -26,8 +29,11 @@ public final class TestRollScreen extends Screen {
 	private static final float CARD_FADE_HEIGHT = 36.0f;
 	private static final float ICON_SCALE = 2.4f;
 
-	private static final float REEL_DURATION_SECONDS = 6.5f;
 	private static final float REEL_FADE_ZONE_FRACTION = 0.2f;
+	private static final float BLUR_STRENGTH_LOW_THRESHOLD = 0.33f;
+	private static final float BLUR_STRENGTH_NORMAL_THRESHOLD = 0.66f;
+	private static final int DOWNTIME_STAT_MARGIN = 10;
+	private static final int DOWNTIME_STAT_COLOR = 0xFFAAAAAA;
 
 	private static final int MIN_FILLER_BEFORE_WINNER = 30;
 	private static final int SCREEN_WIDTH_COVERAGE_MARGIN = 4;
@@ -44,8 +50,6 @@ public final class TestRollScreen extends Screen {
 	private static final float REVEAL_RISE_OFFSET = 20.0f;
 	private static final float REVEAL_TEXT_MARGIN = 70.0f;
 
-	private static final String TENTACLE_DYE_NAME = "Tentacle Dye";
-
 	private final RollCard winner;
 	private final Optional<KuudraTier> tierFilter;
 	private final Screen restoreScreen;
@@ -60,6 +64,7 @@ public final class TestRollScreen extends Screen {
 	private int cardCenterY;
 	private float scrollStart;
 	private float scrollEnd;
+	private float reelDurationSeconds;
 
 	public TestRollScreen(RollCard winner, Optional<KuudraTier> tierFilter, Screen restoreScreen) {
 		super(Component.literal("Downtime Roll"));
@@ -73,13 +78,16 @@ public final class TestRollScreen extends Screen {
 		circleCenterX = Math.round(width * 0.5f);
 		cardCenterY = Math.round(height * 0.5f);
 
+		var config = ConfigManager.getConfig();
+		reelDurationSeconds = (float) config.getCaseOpeningAnimationDurationSeconds();
+
 		var cardStep = CARD_WIDTH + CARD_GAP;
 		var cardsToSpanScreen = (int) Math.ceil((double) width / cardStep) + SCREEN_WIDTH_COVERAGE_MARGIN;
 		var fillerBeforeWinner = Math.max(MIN_FILLER_BEFORE_WINNER, cardsToSpanScreen);
 		var fillerAfterWinner = (int) Math.ceil((double) (width - circleCenterX) / cardStep) + SCREEN_WIDTH_COVERAGE_MARGIN;
 
 		var random = new Random();
-		reel = LootReel.build(winner, fillerBeforeWinner, fillerAfterWinner, tierFilter, random);
+		reel = LootReel.build(winner, fillerBeforeWinner, fillerAfterWinner, tierFilter, config.getBaitChanceMin(), config.getBaitChanceMax(), random);
 		var landingJitter = (random.nextFloat() * 2.0f - 1.0f) * CARD_WIDTH * LANDING_JITTER_FRACTION;
 		scrollStart = 0.0f;
 		scrollEnd = reel.winnerIndex() * cardStep - circleCenterX + landingJitter;
@@ -100,7 +108,7 @@ public final class TestRollScreen extends Screen {
 		}
 
 		var elapsedSeconds = (System.nanoTime() - startTimeNanos) / 1_000_000_000.0f;
-		var progress = Math.min(1.0f, elapsedSeconds / REEL_DURATION_SECONDS);
+		var progress = Math.min(1.0f, elapsedSeconds / reelDurationSeconds);
 		var eased = easeOutQuart(progress);
 
 		var cardStep = CARD_WIDTH + CARD_GAP;
@@ -112,19 +120,18 @@ public final class TestRollScreen extends Screen {
 
 		drawReel(guiGraphics, cardStep, scrollOffset);
 
-		GuiGraphicsExtractorExtensions.applyPostEffect(guiGraphics, Downtime.id("reel_blur"));
+		GuiGraphicsExtractorExtensions.applyPostEffect(guiGraphics, blurPostEffectId());
 
 		drawPointer(guiGraphics);
 
 		if (progress >= 1.0f) {
 			if (landedTimeNanos < 0) {
 				landedTimeNanos = System.nanoTime();
-				if (winner.displayName().equals(TENTACLE_DYE_NAME)) {
-					Minecraft.getInstance().gameRenderer.displayItemActivation(winner.icon());
-				}
 			}
 			drawWinnerReveal(guiGraphics);
 		}
+
+		drawDowntimeStat(guiGraphics, elapsedSeconds);
 
 		super.extractRenderState(guiGraphics, mouseX, mouseY, partialTick);
 	}
@@ -147,6 +154,41 @@ public final class TestRollScreen extends Screen {
 	@Override
 	public void onClose() {
 		this.minecraft.setScreen(restoreScreen);
+	}
+
+	@Override
+	public void removed() {
+		var config = ConfigManager.getConfig();
+		if (config.isDowntimeTrackerEnabled() && startTimeNanos >= 0) {
+			var watchedSeconds = Math.min((System.nanoTime() - startTimeNanos) / 1_000_000_000.0, reelDurationSeconds + REVEAL_DURATION_SECONDS);
+			config.setTotalDowntimeSeconds(config.getTotalDowntimeSeconds() + watchedSeconds);
+			ConfigManager.save();
+		}
+
+		super.removed();
+	}
+
+	private static Identifier blurPostEffectId() {
+		var blurStrength = ConfigManager.getConfig().getBlurStrength();
+		if (blurStrength <= BLUR_STRENGTH_LOW_THRESHOLD) {
+			return Downtime.id("reel_blur_off");
+		}
+		if (blurStrength <= BLUR_STRENGTH_NORMAL_THRESHOLD) {
+			return Downtime.id("reel_blur_low");
+		}
+		return Downtime.id("reel_blur");
+	}
+
+	private void drawDowntimeStat(GuiGraphicsExtractor guiGraphics, float elapsedSeconds) {
+		var config = ConfigManager.getConfig();
+		if (!config.isDowntimeTrackerEnabled()) {
+			return;
+		}
+
+		var font = Minecraft.getInstance().font;
+		var text = "Downtime: " + DurationFormatter.format(config.getTotalDowntimeSeconds() + elapsedSeconds);
+		var textWidth = font.width(text);
+		guiGraphics.text(font, text, (width - textWidth) / 2, DOWNTIME_STAT_MARGIN, DOWNTIME_STAT_COLOR, true);
 	}
 
 	private void drawReel(GuiGraphicsExtractor guiGraphics, int cardStep, float scrollOffset) {
@@ -191,7 +233,11 @@ public final class TestRollScreen extends Screen {
 		var pointerIndex = Math.round((circleCenterX + scrollOffset) / cardStep);
 		if (pointerIndex != lastTickIndex) {
 			lastTickIndex = pointerIndex;
-			Minecraft.getInstance().getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.UI_BUTTON_CLICK, 1.0f));
+
+			var config = ConfigManager.getConfig();
+			if (config.isTickerSoundEnabled()) {
+				Minecraft.getInstance().getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.UI_BUTTON_CLICK, (float) config.getTickerSoundVolume()));
+			}
 		}
 	}
 

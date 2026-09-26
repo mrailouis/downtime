@@ -49,9 +49,13 @@ void main() {
     float distance = roundedDistance(point, size, Radius);
     float alpha = 1.0 - smoothstep(-0.5, 0.5, distance);
     if (ShadowWidth > 0.0) {
-        float shadowProgress = clamp(max(distance, 0.0) / ShadowWidth, 0.0, 1.0);
-        float shadowFalloff = 1.0 - shadowProgress;
-        alpha = shadowFalloff * shadowFalloff * shadowFalloff;
+        if (distance <= 0.0) {
+            alpha = 0.0;
+        } else {
+            float shadowProgress = clamp(distance / ShadowWidth, 0.0, 1.0);
+            float shadowFalloff = 1.0 - shadowProgress;
+            alpha = shadowFalloff * shadowFalloff * shadowFalloff;
+        }
     }
 
     if (alpha <= 0.001) {

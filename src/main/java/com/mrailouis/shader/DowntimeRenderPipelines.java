@@ -20,21 +20,6 @@ public final class DowntimeRenderPipelines {
 		return roundedRectangle(name, width, height, radius, shadowWidth);
 	}
 
-	public static RenderPipeline fullScreenBlur(String name, float circleCenterX, float circleCenterY, float circleRadius, float edgeSoftness, float circleOverlayAlpha) {
-		return RenderPipelines.register(RenderPipeline.builder(RenderPipelines.GUI_TEXTURED_SNIPPET)
-				.withLocation(Downtime.id("pipeline/" + name))
-				.withVertexShader(Downtime.id("core/gui_full_screen_blur"))
-				.withFragmentShader(Downtime.id("core/gui_full_screen_blur"))
-				.withShaderDefine("CIRCLE_CENTER_X", circleCenterX)
-				.withShaderDefine("CIRCLE_CENTER_Y", circleCenterY)
-				.withShaderDefine("CIRCLE_RADIUS", circleRadius)
-				.withShaderDefine("CIRCLE_EDGE_SOFTNESS", edgeSoftness)
-				.withShaderDefine("CIRCLE_OVERLAY_ALPHA", circleOverlayAlpha)
-				.withColorTargetState(new ColorTargetState(BlendFunction.TRANSLUCENT))
-				.withVertexFormat(DefaultVertexFormat.POSITION_TEX_COLOR, VertexFormat.Mode.QUADS)
-				.build());
-	}
-
 	public static RenderPipeline itemCard(String name, float width, float height, float radius, float barHeight, float fadeHeight) {
 		return RenderPipelines.register(RenderPipeline.builder(RenderPipelines.GUI_SNIPPET)
 				.withLocation(Downtime.id("pipeline/" + name))
@@ -45,6 +30,32 @@ public final class DowntimeRenderPipelines {
 				.withShaderDefine("RECT_RADIUS", radius)
 				.withShaderDefine("BAR_HEIGHT", barHeight)
 				.withShaderDefine("FADE_HEIGHT", fadeHeight)
+				.withColorTargetState(new ColorTargetState(BlendFunction.TRANSLUCENT))
+				.withVertexFormat(DefaultVertexFormat.POSITION_TEX_COLOR, VertexFormat.Mode.QUADS)
+				.build());
+	}
+
+	public static RenderPipeline panelBlur(String name, float width, float height, float radius) {
+		return RenderPipelines.register(RenderPipeline.builder(RenderPipelines.GUI_TEXTURED_SNIPPET)
+				.withLocation(Downtime.id("pipeline/" + name))
+				.withVertexShader(Downtime.id("core/gui_full_screen_blur"))
+				.withFragmentShader(Downtime.id("core/gui_panel_blur"))
+				.withShaderDefine("RECT_WIDTH", width)
+				.withShaderDefine("RECT_HEIGHT", height)
+				.withShaderDefine("RECT_RADIUS", radius)
+				.withColorTargetState(new ColorTargetState(BlendFunction.TRANSLUCENT))
+				.withVertexFormat(DefaultVertexFormat.POSITION_TEX_COLOR, VertexFormat.Mode.QUADS)
+				.build());
+	}
+
+	public static RenderPipeline triangle(String name, float width, float height, float pointDirection) {
+		return RenderPipelines.register(RenderPipeline.builder(RenderPipelines.GUI_SNIPPET)
+				.withLocation(Downtime.id("pipeline/" + name))
+				.withVertexShader(Downtime.id("core/gui_rounded_rectangle"))
+				.withFragmentShader(Downtime.id("core/gui_triangle"))
+				.withShaderDefine("RECT_WIDTH", width)
+				.withShaderDefine("RECT_HEIGHT", height)
+				.withShaderDefine("POINT_DIRECTION", pointDirection)
 				.withColorTargetState(new ColorTargetState(BlendFunction.TRANSLUCENT))
 				.withVertexFormat(DefaultVertexFormat.POSITION_TEX_COLOR, VertexFormat.Mode.QUADS)
 				.build());

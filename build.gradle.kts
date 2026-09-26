@@ -53,6 +53,10 @@ dependencies {
 	implementation("net.hypixel:mod-api:${providers.gradleProperty("hypixel_mod_api_version").get()}")
 	implementation("maven.modrinth:hypixel-mod-api:${providers.gradleProperty("hypixel_mod_api_fabric_version").get()}")
 
+	//soft-compat, never required at runtime
+	compileOnly("maven.modrinth:modmenu:${providers.gradleProperty("modmenu_version").get()}")
+	compileOnly("maven.modrinth:yacl:${providers.gradleProperty("yacl_version").get()}")
+
 	//lombok my beloved <3
 	compileOnly("org.projectlombok:lombok:${providers.gradleProperty("lombok_version").get()}")
 	annotationProcessor("org.projectlombok:lombok:${providers.gradleProperty("lombok_version").get()}")

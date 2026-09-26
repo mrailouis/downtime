@@ -9,6 +9,7 @@ import java.awt.Font;
 import java.awt.FontFormatException;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
+import java.awt.font.TextAttribute;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
@@ -42,7 +43,17 @@ public final class AwtFontRenderer {
 				throw new IllegalStateException("Missing font resource: " + resourcePath);
 			}
 
-			return new AwtFontRenderer(Font.createFont(Font.TRUETYPE_FONT, inputStream).deriveFont(style, size));
+			var baseFont = Font.createFont(Font.TRUETYPE_FONT, inputStream);
+			var attributes = new HashMap<TextAttribute, Object>();
+			attributes.put(TextAttribute.SIZE, size);
+			if ((style & Font.BOLD) != 0) {
+				attributes.put(TextAttribute.WEIGHT, TextAttribute.WEIGHT_BOLD);
+			}
+			if ((style & Font.ITALIC) != 0) {
+				attributes.put(TextAttribute.POSTURE, TextAttribute.POSTURE_OBLIQUE);
+			}
+
+			return new AwtFontRenderer(baseFont.deriveFont(attributes));
 		} catch (IOException | FontFormatException exception) {
 			throw new IllegalStateException("Failed to load font resource: " + resourcePath, exception);
 		}
