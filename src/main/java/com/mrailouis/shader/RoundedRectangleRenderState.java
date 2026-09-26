@@ -14,14 +14,14 @@ public record RoundedRectangleRenderState(
 		RenderPipeline pipeline,
 		TextureSetup textureSetup,
 		Matrix3x2fc pose,
-		int x,
-		int y,
-		int width,
-		int height,
+		float x,
+		float y,
+		float width,
+		float height,
 		int color,
 		ScreenRectangle scissorArea,
 		ScreenRectangle bounds) implements GuiElementRenderState {
-	public RoundedRectangleRenderState(RenderPipeline pipeline, Matrix3x2fc pose, int x, int y, int width, int height, int color, ScreenRectangle scissorArea) {
+	public RoundedRectangleRenderState(RenderPipeline pipeline, Matrix3x2fc pose, float x, float y, float width, float height, int color, ScreenRectangle scissorArea) {
 		this(
 				pipeline,
 				TextureSetup.noTexture(),
@@ -32,7 +32,7 @@ public record RoundedRectangleRenderState(
 				height,
 				color,
 				scissorArea,
-				new ScreenRectangle(x, y, width, height).transformMaxBounds(pose));
+				new ScreenRectangle(Math.round(x), Math.round(y), Math.round(width), Math.round(height)).transformMaxBounds(pose));
 	}
 
 	@Override

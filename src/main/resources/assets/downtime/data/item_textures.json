@@ -1,0 +1,191 @@
+{
+  "Ananke Feather": {
+    "itemId": "minecraft:feather"
+  },
+  "Ananke Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/f38190c099877dbf4ac20e4e658f633ec499e56fac736d707fbf0c39bdf4a2e4"
+  },
+  "Aurora Boots": {
+    "dyeColor": 6391036,
+    "itemId": "minecraft:leather_boots"
+  },
+  "Aurora Chestplate": {
+    "dyeColor": 2638321,
+    "itemId": "minecraft:leather_chestplate"
+  },
+  "Aurora Helmet": {
+    "skullUrl": "http://textures.minecraft.net/texture/763d2fe93881b4f26cbe1dd3b09da7cc48dbcdc568d19852ad635d5d16859611"
+  },
+  "Aurora Leggings": {
+    "dyeColor": 4151035,
+    "itemId": "minecraft:leather_leggings"
+  },
+  "Aurora Staff": {
+    "itemId": "minecraft:blaze_rod"
+  },
+  "Barbarian Duke X Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/3116896d7d0a1531e4419e38d8e0c28ac84c3a05f812e809ba4503ed718eb36d"
+  },
+  "Bezal Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/2690d3097a97da8fd872680f3fb897c77e40b1b1eb88d082a7e2f6a48179dc6c"
+  },
+  "Burning Kuudra Core": {
+    "skullUrl": "http://textures.minecraft.net/texture/368743497820c08627d2cc5e891c0f9fc3793f75b6e41e140ac9b007d3b505a5"
+  },
+  "Cinderbat Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/e38095154f8529b61145812746f8939b0097a48a5bb328fa396821bb486560c6"
+  },
+  "Crimson Boots": {
+    "dyeColor": 15094528,
+    "itemId": "minecraft:leather_boots"
+  },
+  "Crimson Chestplate": {
+    "dyeColor": 16740108,
+    "itemId": "minecraft:leather_chestplate"
+  },
+  "Crimson Essence": {
+    "skullUrl": "http://textures.minecraft.net/texture/67c41930f8ff0f2b0430e169ae5f38e984df1244215705c6f173862844543e9d"
+  },
+  "Crimson Helmet": {
+    "skullUrl": "http://textures.minecraft.net/texture/5051c83d9ebf69013f1ec8c9efc979ec2d925a921cc877ff64abe09aadd2f6cc"
+  },
+  "Crimson Leggings": {
+    "dyeColor": 15098117,
+    "itemId": "minecraft:leather_leggings"
+  },
+  "Daemon Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/acb33d965439c38a875e859e4eee7785a9a6dad979bf11bb6fb95849ede2841"
+  },
+  "Dusty Travel Scroll to the Kuudra Skull": {
+    "itemId": "minecraft:map"
+  },
+  "Enchanted Book": {
+    "itemId": "minecraft:enchanted_book"
+  },
+  "Fervor Boots": {
+    "dyeColor": 501364,
+    "itemId": "minecraft:leather_boots"
+  },
+  "Fervor Chestplate": {
+    "dyeColor": 15746857,
+    "itemId": "minecraft:leather_chestplate"
+  },
+  "Fervor Helmet": {
+    "skullUrl": "http://textures.minecraft.net/texture/bc6e137e2a6a501dfc854ca900b5b681227dea4d5a9616849a3a68f09c6dc327"
+  },
+  "Fervor Leggings": {
+    "dyeColor": 1556361,
+    "itemId": "minecraft:leather_leggings"
+  },
+  "Fire Eel Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/c63704a7fc7d437f7b923e23e9a08ae3bbe28937df4dafa9e3e8725b2ce4afa5"
+  },
+  "Flare Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/737623f79f7eb4f3f80da65b652cc44b2148eea41f9ffe2e86a23bdf49ab77b1"
+  },
+  "Heavy Pearl": {
+    "itemId": "minecraft:paper"
+  },
+  "Hellstorm Wand": {
+    "itemId": "minecraft:redstone_torch"
+  },
+  "Hellwisp Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/199c3470ba4317913717ab36b626aec0b563266e28b3a517d71e9a0af0c90f96"
+  },
+  "Hollow Boots": {
+    "dyeColor": 14942202,
+    "itemId": "minecraft:leather_boots"
+  },
+  "Hollow Chestplate": {
+    "dyeColor": 16763661,
+    "itemId": "minecraft:leather_chestplate"
+  },
+  "Hollow Helmet": {
+    "skullUrl": "http://textures.minecraft.net/texture/4aacd705a29b790528a70ee93a1cbd92c029601a762d52805f60460e7a7ff8f7"
+  },
+  "Hollow Leggings": {
+    "dyeColor": 16774819,
+    "itemId": "minecraft:leather_leggings"
+  },
+  "Hollow Wand": {
+    "itemId": "minecraft:feather"
+  },
+  "Kada Knight Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/74e9c6e98582ffd8ff8feb3322cd1849c43fb16b158abb11ca7b42eda7743eb"
+  },
+  "Kraken Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/1f0239fb498e5907ede12ab32629ee95f0064574a9ffdff9fc3a1c8e2ec17587"
+  },
+  "Kuudra Mandible": {
+    "skullUrl": "http://textures.minecraft.net/texture/c89b6d34d2e267f159cfac7900e8d0a33e992754147adedf2faad4775022fb17"
+  },
+  "Kuudra Teeth": {
+    "itemId": "minecraft:paper"
+  },
+  "Kuudra Tentacle": {
+    "itemId": "minecraft:paper"
+  },
+  "Lava Flame Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/b78ef2e4cf2c41a2d14bfde9caff10219f5b1bf5b35a49eb51c6467882cb5f0"
+  },
+  "Lord Jawbus Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/a0dbb5093a3f9d770e8da4d97675c7ca26b0638f2da3a3b656f7ccad5c198b71"
+  },
+  "Magma Slug Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/38957d5023c937c4c41aa2412d43410bda23cf79a9f6ab36b76fef2d7c429"
+  },
+  "Mandraa": {
+    "skullUrl": "http://textures.minecraft.net/texture/94a02e1a4dcf7a61558c79cdabb4f78ed37ae82f965541b612af088cfcff2b1b"
+  },
+  "Matcho Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/ef2daabb78a1f7aa12d145d88c0ca46b9e856f5534e9286e555faf0c291f4fd5"
+  },
+  "Molten Belt": {
+    "skullUrl": "http://textures.minecraft.net/texture/57f7f57234b9986e85da878fb3b6670f1c70a3570dddbe9fb530913082ba44b5"
+  },
+  "Molten Bracelet": {
+    "skullUrl": "http://textures.minecraft.net/texture/205294f8915c8da9b6e3829f6dba135f88ab4761b9430e18ff125ef3e950ccdf"
+  },
+  "Molten Cloak": {
+    "skullUrl": "http://textures.minecraft.net/texture/6c18bb0f52f246ec9bff5f05761456be273e730cd276555fd772ba8c3fa0f144"
+  },
+  "Molten Necklace": {
+    "skullUrl": "http://textures.minecraft.net/texture/6bc0ca44c678c4fb4ebe73f12717f8ab6df3b5ab868d217e68c36aafe2ad80e4"
+  },
+  "Moltenfish Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/b403ea1ab4359a775bf6161c3c39fe8cd8b331893e9c936cab77fe5b7651d066"
+  },
+  "Taurus Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/1642a06cd75ef307c1913ba7a224fb2082d8a2c5254fd1bf006125a087a9a868"
+  },
+  "Tentacle Dye": {
+    "skullUrl": "http://textures.minecraft.net/texture/298bba8068091bfb70d7f97983934b0dea6cf91cc99ea9d14af7e811815c4bf7"
+  },
+  "Terror Boots": {
+    "dyeColor": 8144108,
+    "itemId": "minecraft:leather_boots"
+  },
+  "Terror Chestplate": {
+    "dyeColor": 4064687,
+    "itemId": "minecraft:leather_chestplate"
+  },
+  "Terror Helmet": {
+    "skullUrl": "http://textures.minecraft.net/texture/52af8833697c81b46e83c8f1895266e606efbb3a59f1c3b4ca2816da2bcfa9d6"
+  },
+  "Terror Leggings": {
+    "dyeColor": 6104017,
+    "itemId": "minecraft:leather_leggings"
+  },
+  "Tormentor": {
+    "itemId": "minecraft:iron_sword"
+  },
+  "Wheel of Fate": {
+    "skullUrl": "http://textures.minecraft.net/texture/5c87f59b02886fef594eaebb46dc337aabb845b2c41bb4d238c12607d8a09544"
+  },
+  "Wither Spectre Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/f6aa5acfd973f67ba8e249ae07a11ae7ca713c900d90d09ce0903c79ddd7dd9e"
+  },
+  "XYZ Shard": {
+    "skullUrl": "http://textures.minecraft.net/texture/4e8f19def33085db564909fc8c1b2eabc0ebc59cd89665f31e580f1fc2497b58"
+  }
+}

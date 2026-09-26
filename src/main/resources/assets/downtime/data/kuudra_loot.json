@@ -2,1577 +2,2271 @@
   "basic": {
     "freeChest": [
       {
-        "slot": 1,
         "item": "1 Crimson Essence",
         "chance": 50.0
       },
       {
-        "slot": 1,
         "item": "2 Crimson Essence",
         "chance": 50.0
       }
     ],
-    "paidChest": [
+    "paidChestSlot1": [
       {
-        "slot": 1,
-        "item": "Aurora Helmet",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Aurora Chestplate",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Aurora Leggings",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Aurora Boots",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
         "item": "Aurora Staff",
-        "chance": 1.05
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.7,
+        "chance": 1.05,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 1,
-        "item": "Crimson Helmet",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Chestplate",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Leggings",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Boots",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Helmet",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Chestplate",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Leggings",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Boots",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Helmet",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Chestplate",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Leggings",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Boots",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
         "item": "Hollow Wand",
-        "chance": 1.05
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.7,
+        "chance": 1.05,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 1,
-        "item": "Molten Necklace",
-        "chance": 1.2
-      },
-      {
-        "slot": 1,
-        "item": "Molten Cloak",
-        "chance": 1.2
-      },
-      {
-        "slot": 1,
         "item": "Molten Belt",
-        "chance": 1.2
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.8,
+        "chance": 1.2,
+        "rarity": "EPIC"
       },
       {
-        "slot": 1,
+        "item": "Molten Cloak",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.8,
+        "chance": 1.2,
+        "rarity": "EPIC"
+      },
+      {
         "item": "Molten Bracelet",
-        "chance": 1.2
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.8,
+        "chance": 1.2,
+        "rarity": "EPIC"
       },
       {
-        "slot": 1,
-        "item": "Tentacle Dye",
-        "chance": 0.001
+        "item": "Molten Necklace",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.8,
+        "chance": 1.2,
+        "rarity": "EPIC"
       },
       {
-        "slot": 1,
-        "item": "Terror Helmet",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Terror Chestplate",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Terror Leggings",
-        "chance": 4.31
-      },
-      {
-        "slot": 1,
-        "item": "Terror Boots",
-        "chance": 4.31
-      },
-      {
-        "slot": 2,
-        "item": "Wheel of Fate",
-        "chance": 0.53
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Fatal Tempo I",
-        "chance": 0.03
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Inferno I",
-        "chance": 0.03
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Ferocious Mana I",
-        "chance": 21.87
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Hardened Mana I",
-        "chance": 21.87
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Mana Vampire I",
-        "chance": 21.87
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Strong Mana I",
-        "chance": 21.87
-      },
-      {
-        "slot": 1,
         "item": "Bezal Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 4.5,
         "chance": 6.76,
-        "attribute": "Blazing Resistance"
+        "rarity": "COMMON"
       },
       {
-        "slot": 2,
-        "item": "Bezal Shard",
-        "chance": 11.93,
-        "attribute": "Blazing Resistance"
+        "item": "Crimson Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 3,
-        "item": "1 Kuudra Teeth",
-        "chance": 100.0
+        "item": "Crimson Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 4,
-        "item": "80 Crimson Essence",
-        "chance": 100.0
+        "item": "Fervor Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 5,
-        "item": "1 Kraken Shard",
-        "chance": 100.0,
-        "attribute": "Vitality"
+        "item": "Hollow Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Hollow Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Hollow Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Crimson Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fervor Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fervor Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fervor Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Crimson Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Hollow Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.32,
+        "rarity": "LEGENDARY"
       }
-    ]
+    ],
+    "paidChestSlot2": [
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Strong Vitality I",
+        "weight": 16.5,
+        "chance": 17.7,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Hardened Vitality I",
+        "weight": 16.5,
+        "chance": 17.7,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Vivacious Vitality I",
+        "weight": 16.5,
+        "chance": 17.7,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Vampiric Vitality",
+        "weight": 16.5,
+        "chance": 17.7,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Wheel of Fate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.2,
+        "chance": 2.36,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Inferno",
+        "weight": 0.02,
+        "chance": 0.02,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Fatal Tempo",
+        "weight": 0.02,
+        "chance": 0.02,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Bezal Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 9.0,
+        "chance": 9.65,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Kuudra Tentacle",
+        "amount": "1",
+        "enchant": null,
+        "weight": 16.0,
+        "chance": 17.16,
+        "rarity": "RARE"
+      }
+    ],
+    "guaranteed": [],
+    "tentacleDyeChance": null
   },
   "hot": {
     "freeChest": [
       {
-        "slot": 1,
         "item": "14 Crimson Essence",
         "chance": 33.333333333333336
       },
       {
-        "slot": 1,
         "item": "18 Crimson Essence",
         "chance": 33.333333333333336
       },
       {
-        "slot": 1,
         "item": "22 Crimson Essence",
         "chance": 33.333333333333336
       }
     ],
-    "paidChest": [
+    "paidChestSlot1": [
       {
-        "slot": 1,
-        "item": "Aurora Helmet",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Aurora Chestplate",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Aurora Leggings",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Aurora Boots",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
         "item": "Aurora Staff",
-        "chance": 0.99
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.7,
+        "chance": 0.99,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 1,
-        "item": "Crimson Helmet",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Chestplate",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Leggings",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Boots",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Helmet",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Chestplate",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Leggings",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Boots",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Helmet",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Chestplate",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Leggings",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Boots",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
         "item": "Hollow Wand",
-        "chance": 0.99
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.7,
+        "chance": 0.99,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 1,
-        "item": "Molten Necklace",
-        "chance": 1.27
-      },
-      {
-        "slot": 1,
-        "item": "Molten Cloak",
-        "chance": 1.27
-      },
-      {
-        "slot": 1,
         "item": "Molten Belt",
-        "chance": 1.27
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.9,
+        "chance": 1.27,
+        "rarity": "EPIC"
       },
       {
-        "slot": 1,
+        "item": "Molten Cloak",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.9,
+        "chance": 1.27,
+        "rarity": "EPIC"
+      },
+      {
         "item": "Molten Bracelet",
-        "chance": 1.27
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.9,
+        "chance": 1.27,
+        "rarity": "EPIC"
       },
       {
-        "slot": 1,
-        "item": "Tentacle Dye",
-        "chance": 0.00125
+        "item": "Molten Necklace",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.9,
+        "chance": 1.27,
+        "rarity": "EPIC"
       },
       {
-        "slot": 1,
-        "item": "Terror Helmet",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Terror Chestplate",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Terror Leggings",
-        "chance": 4.06
-      },
-      {
-        "slot": 1,
-        "item": "Terror Boots",
-        "chance": 4.06
-      },
-      {
-        "slot": 2,
-        "item": "Wheel of Fate",
-        "chance": 1.19
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Fatal Tempo I",
-        "chance": 0.13
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Inferno I",
-        "chance": 0.13
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Ferocious Mana II",
-        "chance": 19.71
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Hardened Mana II",
-        "chance": 19.71
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Mana Vampire II",
-        "chance": 19.71
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Strong Mana II",
-        "chance": 19.71
-      },
-      {
-        "slot": 1,
         "item": "Bezal Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 4.5,
         "chance": 6.36,
-        "attribute": "Blazing Resistance"
+        "rarity": "COMMON"
       },
       {
-        "slot": 2,
-        "item": "Bezal Shard",
-        "chance": 10.75,
-        "attribute": "Blazing Resistance"
-      },
-      {
-        "slot": 1,
         "item": "Magma Slug Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.75,
         "chance": 5.3,
-        "attribute": "Infection"
+        "rarity": "UNCOMMON"
       },
       {
-        "slot": 2,
-        "item": "Magma Slug Shard",
-        "chance": 8.96,
-        "attribute": "Infection"
+        "item": "Crimson Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 4,
-        "item": "1 Kuudra Teeth",
-        "chance": 100.0
+        "item": "Crimson Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 3,
-        "item": "200 Crimson Essence",
-        "chance": 100.0
+        "item": "Fervor Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 5,
-        "item": "1 Kraken Shard",
-        "chance": 100.0,
-        "attribute": "Vitality"
+        "item": "Hollow Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Hollow Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Hollow Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Crimson Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fervor Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fervor Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fervor Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Crimson Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Hollow Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 4.06,
+        "rarity": "LEGENDARY"
       }
-    ]
+    ],
+    "paidChestSlot2": [
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Strong Vitality II",
+        "weight": 16.5,
+        "chance": 16.25,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Hardened Vitality II",
+        "weight": 16.5,
+        "chance": 16.25,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Vivacious Vitality II",
+        "weight": 16.5,
+        "chance": 16.25,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Vampiric Vitality II",
+        "weight": 16.5,
+        "chance": 16.25,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Wheel of Fate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.8,
+        "chance": 2.76,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Inferno",
+        "weight": 0.11,
+        "chance": 0.11,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Fatal Tempo",
+        "weight": 0.11,
+        "chance": 0.11,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Bezal Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 9.0,
+        "chance": 8.87,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Magma Slug Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 7.5,
+        "chance": 7.39,
+        "rarity": "UNCOMMON"
+      },
+      {
+        "item": "Kuudra Tentacle",
+        "amount": "1",
+        "enchant": null,
+        "weight": 16.0,
+        "chance": 15.76,
+        "rarity": "RARE"
+      }
+    ],
+    "guaranteed": [],
+    "tentacleDyeChance": null
   },
   "burning": {
     "freeChest": [
       {
-        "slot": 1,
         "item": "25 Crimson Essence",
         "chance": 50.0
       },
       {
-        "slot": 1,
         "item": "30 Crimson Essence",
         "chance": 50.0
       }
     ],
-    "paidChest": [
+    "paidChestSlot1": [
       {
-        "slot": 1,
-        "item": "Aurora Helmet",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Aurora Chestplate",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Aurora Leggings",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Aurora Boots",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
         "item": "Aurora Staff",
-        "chance": 0.84
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.7,
+        "chance": 0.84,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 1,
-        "item": "Burning Kuudra Core",
-        "chance": 0.12
-      },
-      {
-        "slot": 2,
-        "item": "500 Crimson Essence",
-        "chance": 7.82
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Helmet",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Chestplate",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Leggings",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Boots",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Helmet",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Chestplate",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Leggings",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Boots",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Helmet",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Chestplate",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Leggings",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Boots",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
         "item": "Hollow Wand",
-        "chance": 0.84
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.7,
+        "chance": 0.84,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 2,
-        "item": "5 Kuudra Teeth",
-        "chance": 7.82
-      },
-      {
-        "slot": 1,
-        "item": "Mandraa",
-        "chance": 0.96
-      },
-      {
-        "slot": 1,
-        "item": "Molten Necklace",
-        "chance": 1.19
-      },
-      {
-        "slot": 1,
-        "item": "Molten Cloak",
-        "chance": 1.19
-      },
-      {
-        "slot": 1,
         "item": "Molten Belt",
-        "chance": 1.19
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.0,
+        "chance": 1.19,
+        "rarity": "EPIC"
       },
       {
-        "slot": 1,
+        "item": "Molten Cloak",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.0,
+        "chance": 1.19,
+        "rarity": "EPIC"
+      },
+      {
         "item": "Molten Bracelet",
-        "chance": 1.19
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.0,
+        "chance": 1.19,
+        "rarity": "EPIC"
       },
       {
-        "slot": 1,
-        "item": "Tentacle Dye",
-        "chance": 0.00167
+        "item": "Molten Necklace",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.0,
+        "chance": 1.19,
+        "rarity": "EPIC"
       },
       {
-        "slot": 1,
-        "item": "Terror Helmet",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Terror Chestplate",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Terror Leggings",
-        "chance": 3.43
-      },
-      {
-        "slot": 1,
-        "item": "Terror Boots",
-        "chance": 3.43
-      },
-      {
-        "slot": 2,
-        "item": "Wheel of Fate",
-        "chance": 1.25
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Fatal Tempo I",
-        "chance": 0.16
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Inferno I",
-        "chance": 0.16
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Ferocious Mana III",
-        "chance": 12.81
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Hardened Mana III",
-        "chance": 12.81
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Mana Vampire III",
-        "chance": 12.81
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Strong Mana III",
-        "chance": 12.81
-      },
-      {
-        "slot": 1,
         "item": "Bezal Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 4.5,
         "chance": 5.38,
-        "attribute": "Blazing Resistance"
+        "rarity": "COMMON"
       },
       {
-        "slot": 2,
-        "item": "Bezal Shard",
-        "chance": 7.04,
-        "attribute": "Blazing Resistance"
-      },
-      {
-        "slot": 1,
         "item": "Magma Slug Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.75,
         "chance": 4.48,
-        "attribute": "Infection"
+        "rarity": "UNCOMMON"
       },
       {
-        "slot": 2,
-        "item": "Magma Slug Shard",
-        "chance": 5.87,
-        "attribute": "Infection"
+        "item": "Burning Kuudra Core",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.1,
+        "chance": 0.12,
+        "rarity": "RARE"
       },
       {
-        "slot": 1,
+        "item": "Mandraa",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.8,
+        "chance": 0.96,
+        "rarity": "LEGENDARY"
+      },
+      {
         "item": "Kada Knight Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.05,
         "chance": 3.64,
-        "attribute": "Lifeline"
+        "rarity": "RARE"
       },
       {
-        "slot": 2,
-        "item": "Kada Knight Shard",
-        "chance": 4.77,
-        "attribute": "Lifeline"
-      },
-      {
-        "slot": 1,
-        "item": "Wither Specter Shard",
+        "item": "Wither Spectre Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.05,
         "chance": 3.64,
-        "attribute": "Breeze"
+        "rarity": "RARE"
       },
       {
-        "slot": 2,
-        "item": "Wither Specter Shard",
-        "chance": 4.77,
-        "attribute": "Breeze"
-      },
-      {
-        "slot": 1,
         "item": "Matcho Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.05,
         "chance": 3.64,
-        "attribute": "Ignition"
+        "rarity": "RARE"
       },
       {
-        "slot": 2,
-        "item": "Matcho Shard",
-        "chance": 4.77,
-        "attribute": "Ignition"
-      },
-      {
-        "slot": 1,
         "item": "Lava Flame Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.5,
         "chance": 2.99,
-        "attribute": "Blazing Fortune"
+        "rarity": "RARE"
       },
       {
-        "slot": 2,
-        "item": "Lava Flame Shard",
-        "chance": 3.91,
-        "attribute": "Blazing Fortune"
+        "item": "Crimson Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 3,
-        "item": "2 Kuudra Teeth",
-        "chance": 100.0
+        "item": "Crimson Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 4,
-        "item": "400 Crimson Essence",
-        "chance": 100.0
+        "item": "Fervor Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 5,
-        "item": "1 Kraken Shard",
-        "chance": 100.0,
-        "attribute": "Vitality"
+        "item": "Hollow Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Hollow Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Hollow Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Crimson Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fervor Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fervor Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fervor Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Crimson Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Hollow Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.43,
+        "rarity": "LEGENDARY"
       }
-    ]
+    ],
+    "paidChestSlot2": [
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Strong Vitality III",
+        "weight": 16.5,
+        "chance": 11.33,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Hardened Vitality III",
+        "weight": 16.5,
+        "chance": 11.33,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Vivacious Vitality III",
+        "weight": 16.5,
+        "chance": 11.33,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Vampiric Vitality III",
+        "weight": 16.5,
+        "chance": 11.33,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Wheel of Fate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.4,
+        "chance": 2.34,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Inferno",
+        "weight": 0.2,
+        "chance": 0.14,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Fatal Tempo",
+        "weight": 0.2,
+        "chance": 0.14,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Bezal Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 9.0,
+        "chance": 6.18,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Magma Slug Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 7.5,
+        "chance": 5.15,
+        "rarity": "UNCOMMON"
+      },
+      {
+        "item": "Kuudra Teeth",
+        "amount": "5",
+        "enchant": null,
+        "weight": 10.0,
+        "chance": 6.87,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Crimson Essence",
+        "amount": "500",
+        "enchant": null,
+        "weight": 10.0,
+        "chance": 6.87,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Kada Knight Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 6.1,
+        "chance": 4.19,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Wither Spectre Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 6.1,
+        "chance": 4.19,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Matcho Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 6.1,
+        "chance": 4.19,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Lava Flame Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 5.0,
+        "chance": 3.43,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Kuudra Tentacle",
+        "amount": "1",
+        "enchant": null,
+        "weight": 16.0,
+        "chance": 10.99,
+        "rarity": "RARE"
+      }
+    ],
+    "guaranteed": [],
+    "tentacleDyeChance": null
   },
   "fiery": {
     "freeChest": [
       {
-        "slot": 1,
+        "item": "80 Crimson Essence",
+        "chance": 33.0
+      },
+      {
         "item": "100 Crimson Essence",
-        "chance": 100.0
+        "chance": 33.0
+      },
+      {
+        "item": "120 Crimson Essence",
+        "chance": 33.0
       }
     ],
-    "paidChest": [
+    "paidChestSlot1": [
       {
-        "slot": 1,
-        "item": "Aurora Helmet",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
-        "item": "Aurora Chestplate",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
-        "item": "Aurora Leggings",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
-        "item": "Aurora Boots",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
         "item": "Aurora Staff",
-        "chance": 0.75
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.7,
+        "chance": 0.75,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 1,
-        "item": "Burning Kuudra Core",
-        "chance": 0.32
-      },
-      {
-        "slot": 2,
-        "item": "500 Crimson Essence",
-        "chance": 6.35
-      },
-      {
-        "slot": 2,
-        "item": "2500 Crimson Essence",
-        "chance": 0.63
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Helmet",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Chestplate",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Leggings",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Boots",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Helmet",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Chestplate",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Leggings",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Boots",
-        "chance": 3.09
-      },
-      {
-        "slot": 2,
-        "item": "3 Heavy Pearl",
-        "chance": 6.35
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Helmet",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Chestplate",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Leggings",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Boots",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
         "item": "Hollow Wand",
-        "chance": 0.75
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.7,
+        "chance": 0.75,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 2,
-        "item": "5 Kuudra Teeth",
-        "chance": 6.35
-      },
-      {
-        "slot": 2,
-        "item": "25 Kuudra Teeth",
-        "chance": 0.63
-      },
-      {
-        "slot": 1,
-        "item": "Mandraa",
-        "chance": 1.08
-      },
-      {
-        "slot": 1,
-        "item": "Molten Necklace",
-        "chance": 1.18
-      },
-      {
-        "slot": 1,
-        "item": "Molten Cloak",
-        "chance": 1.18
-      },
-      {
-        "slot": 1,
         "item": "Molten Belt",
-        "chance": 1.18
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.1,
+        "chance": 1.18,
+        "rarity": "EPIC"
       },
       {
-        "slot": 1,
+        "item": "Molten Cloak",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.1,
+        "chance": 1.18,
+        "rarity": "EPIC"
+      },
+      {
         "item": "Molten Bracelet",
-        "chance": 1.18
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.1,
+        "chance": 1.18,
+        "rarity": "EPIC"
       },
       {
-        "slot": 1,
-        "item": "Tentacle Dye",
-        "chance": 0.0025
+        "item": "Molten Necklace",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.1,
+        "chance": 1.18,
+        "rarity": "EPIC"
       },
       {
-        "slot": 1,
-        "item": "Terror Helmet",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
-        "item": "Terror Chestplate",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
-        "item": "Terror Leggings",
-        "chance": 3.09
-      },
-      {
-        "slot": 1,
-        "item": "Terror Boots",
-        "chance": 3.09
-      },
-      {
-        "slot": 2,
-        "item": "Wheel of Fate",
-        "chance": 1.4
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Fatal Tempo I",
-        "chance": 0.18
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Inferno I",
-        "chance": 0.18
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Ferocious Mana IV",
-        "chance": 10.47
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Hardened Mana IV",
-        "chance": 10.47
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Mana Vampire IV",
-        "chance": 10.47
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Strong Mana IV",
-        "chance": 10.47
-      },
-      {
-        "slot": 1,
         "item": "Bezal Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 4.5,
         "chance": 4.84,
-        "attribute": "Blazing Resistance"
+        "rarity": "COMMON"
       },
       {
-        "slot": 2,
-        "item": "Bezal Shard",
-        "chance": 5.71,
-        "attribute": "Blazing Resistance"
-      },
-      {
-        "slot": 1,
         "item": "Magma Slug Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.75,
         "chance": 4.03,
-        "attribute": "Infection"
+        "rarity": "UNCOMMON"
       },
       {
-        "slot": 2,
-        "item": "Magma Slug Shard",
-        "chance": 4.76,
-        "attribute": "Infection"
+        "item": "Burning Kuudra Core",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.3,
+        "chance": 0.32,
+        "rarity": "RARE"
       },
       {
-        "slot": 1,
+        "item": "Mandraa",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.0,
+        "chance": 1.08,
+        "rarity": "LEGENDARY"
+      },
+      {
         "item": "Kada Knight Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.05,
         "chance": 3.28,
-        "attribute": "Lifeline"
+        "rarity": "RARE"
       },
       {
-        "slot": 2,
-        "item": "Kada Knight Shard",
-        "chance": 3.87,
-        "attribute": "Lifeline"
-      },
-      {
-        "slot": 1,
-        "item": "Wither Specter Shard",
+        "item": "Wither Spectre Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.05,
         "chance": 3.28,
-        "attribute": "Breeze"
+        "rarity": "RARE"
       },
       {
-        "slot": 2,
-        "item": "Wither Specter Shard",
-        "chance": 3.87,
-        "attribute": "Breeze"
-      },
-      {
-        "slot": 1,
         "item": "Matcho Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.05,
         "chance": 3.28,
-        "attribute": "Ignition"
+        "rarity": "RARE"
       },
       {
-        "slot": 2,
-        "item": "Matcho Shard",
-        "chance": 3.87,
-        "attribute": "Ignition"
-      },
-      {
-        "slot": 1,
         "item": "Lava Flame Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.5,
         "chance": 2.69,
-        "attribute": "Blazing Fortune"
+        "rarity": "RARE"
       },
       {
-        "slot": 2,
-        "item": "Lava Flame Shard",
-        "chance": 3.17,
-        "attribute": "Blazing Fortune"
-      },
-      {
-        "slot": 1,
         "item": "Fire Eel Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.9,
         "chance": 2.04,
-        "attribute": "Trophy Hunter"
+        "rarity": "EPIC"
       },
       {
-        "slot": 2,
-        "item": "Fire Eel Shard",
-        "chance": 2.41,
-        "attribute": "Trophy Hunter"
-      },
-      {
-        "slot": 1,
         "item": "Flare Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.9,
         "chance": 2.04,
-        "attribute": "Blazing"
+        "rarity": "EPIC"
       },
       {
-        "slot": 2,
-        "item": "Flare Shard",
-        "chance": 2.41,
-        "attribute": "Blazing"
-      },
-      {
-        "slot": 1,
         "item": "Barbarian Duke X Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.9,
         "chance": 2.04,
-        "attribute": "Warrior"
+        "rarity": "EPIC"
       },
       {
-        "slot": 2,
-        "item": "Barbarian Duke X Shard",
-        "chance": 2.41,
-        "attribute": "Warrior"
-      },
-      {
-        "slot": 1,
         "item": "Hellwisp Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.55,
         "chance": 1.67,
-        "attribute": "Matriarch Cubs"
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 2,
-        "item": "Hellwisp Shard",
-        "chance": 1.97,
-        "attribute": "Matriarch Cubs"
-      },
-      {
-        "slot": 1,
         "item": "XYZ Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.25,
         "chance": 1.34,
-        "attribute": "Mana Regeneration"
+        "rarity": "EPIC"
       },
       {
-        "slot": 2,
-        "item": "XYZ Shard",
-        "chance": 1.59,
-        "attribute": "Mana Regeneration"
+        "item": "Crimson Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 3,
-        "item": "800 Crimson Essence",
-        "chance": 100.0
+        "item": "Crimson Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 4,
-        "item": "2 Kuudra Teeth",
-        "chance": 100.0
+        "item": "Fervor Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 5,
-        "item": "1 Kraken Shard",
-        "chance": 75.0,
-        "attribute": "Vitality"
+        "item": "Hollow Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 5,
-        "item": "2 Kraken Shard",
-        "chance": 25.0,
-        "attribute": "Vitality"
+        "item": "Hollow Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Hollow Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Crimson Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fervor Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fervor Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fervor Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Crimson Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Hollow Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 3.09,
+        "rarity": "LEGENDARY"
       }
-    ]
+    ],
+    "paidChestSlot2": [
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Strong Vitality IV",
+        "weight": 16.5,
+        "chance": 9.41,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Hardened Vitality IV",
+        "weight": 16.5,
+        "chance": 9.41,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Vivacious Vitality IV",
+        "weight": 16.5,
+        "chance": 9.41,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Vampiric Vitality IV",
+        "weight": 16.5,
+        "chance": 9.41,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Wheel of Fate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 4.0,
+        "chance": 2.28,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Inferno",
+        "weight": 0.29,
+        "chance": 0.17,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Fatal Tempo",
+        "weight": 0.29,
+        "chance": 0.17,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Bezal Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 9.0,
+        "chance": 5.13,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Magma Slug Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 7.5,
+        "chance": 4.28,
+        "rarity": "UNCOMMON"
+      },
+      {
+        "item": "Kuudra Teeth",
+        "amount": "5",
+        "enchant": null,
+        "weight": 10.0,
+        "chance": 5.7,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Crimson Essence",
+        "amount": "500",
+        "enchant": null,
+        "weight": 10.0,
+        "chance": 5.7,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Kada Knight Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 6.1,
+        "chance": 3.48,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Wither Spectre Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 6.1,
+        "chance": 3.48,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Matcho Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 6.1,
+        "chance": 3.48,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Lava Flame Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 5.0,
+        "chance": 2.85,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Kuudra Teeth",
+        "amount": "25",
+        "enchant": null,
+        "weight": 1.0,
+        "chance": 0.57,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Crimson Essence",
+        "amount": "2500",
+        "enchant": null,
+        "weight": 1.0,
+        "chance": 0.57,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Heavy Pearl",
+        "amount": "3",
+        "enchant": null,
+        "weight": 10.0,
+        "chance": 5.7,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fire Eel Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.8,
+        "chance": 2.17,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Flare Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.8,
+        "chance": 2.17,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Barbarian Duke X Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.8,
+        "chance": 2.17,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Hellwisp Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.1,
+        "chance": 1.77,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "XYZ Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.5,
+        "chance": 1.43,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Kuudra Tentacle",
+        "amount": "1",
+        "enchant": null,
+        "weight": 16.0,
+        "chance": 9.12,
+        "rarity": "RARE"
+      }
+    ],
+    "guaranteed": [],
+    "tentacleDyeChance": null
   },
   "infernal": {
     "freeChest": [
       {
-        "slot": 1,
         "item": "200 Crimson Essence",
         "chance": 100.0
       }
     ],
-    "paidChest": [
+    "paidChestSlot1": [
       {
-        "slot": 1,
-        "item": "Aurora Helmet",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Aurora Chestplate",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Aurora Leggings",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Aurora Boots",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Aurora Staff",
-        "chance": 0.72
-      },
-      {
-        "slot": 1,
-        "item": "Burning Kuudra Core",
-        "chance": 0.51
-      },
-      {
-        "slot": 2,
-        "item": "500 Crimson Essence",
-        "chance": 5.89
-      },
-      {
-        "slot": 2,
-        "item": "2500 Crimson Essence",
-        "chance": 0.59
-      },
-      {
-        "slot": 2,
-        "item": "10000 Crimson Essence",
-        "chance": 0.06
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Helmet",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Chestplate",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Leggings",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Crimson Boots",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Helmet",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Chestplate",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Leggings",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Fervor Boots",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Hellstorm Wand",
-        "chance": 0.1
-      },
-      {
-        "slot": 2,
-        "item": "3 Heavy Pearl",
-        "chance": 5.89
-      },
-      {
-        "slot": 2,
-        "item": "10 Heavy Pearl",
-        "chance": 0.59
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Helmet",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Chestplate",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Leggings",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Boots",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Hollow Wand",
-        "chance": 0.72
-      },
-      {
-        "slot": 2,
-        "item": "5 Kuudra Teeth",
-        "chance": 5.89
-      },
-      {
-        "slot": 2,
-        "item": "25 Kuudra Teeth",
-        "chance": 5.89
-      },
-      {
-        "slot": 2,
-        "item": "100 Kuudra Teeth",
-        "chance": 5.89
-      },
-      {
-        "slot": 1,
-        "item": "Mandraa",
-        "chance": 1.23
-      },
-      {
-        "slot": 1,
-        "item": "Molten Necklace",
-        "chance": 1.23
-      },
-      {
-        "slot": 1,
-        "item": "Molten Cloak",
-        "chance": 1.23
-      },
-      {
-        "slot": 1,
-        "item": "Molten Belt",
-        "chance": 1.23
-      },
-      {
-        "slot": 1,
-        "item": "Molten Bracelet",
-        "chance": 1.23
-      },
-      {
-        "slot": 1,
-        "item": "Tentacle Dye",
-        "chance": 0.005
-      },
-      {
-        "slot": 1,
-        "item": "Terror Helmet",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Terror Chestplate",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Terror Leggings",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Terror Boots",
-        "chance": 2.95
-      },
-      {
-        "slot": 1,
-        "item": "Tormentor",
-        "chance": 0.1
-      },
-      {
-        "slot": 2,
-        "item": "Wheel of Fate",
-        "chance": 1.65
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Fatal Tempo I",
-        "chance": 0.22
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Inferno I",
-        "chance": 0.22
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Ferocious Mana V",
-        "chance": 9.72
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Hardened Mana V",
-        "chance": 9.72
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Mana Vampire V",
-        "chance": 9.72
-      },
-      {
-        "slot": 2,
-        "item": "Enchanted Book Strong Mana V",
-        "chance": 9.72
-      },
-      {
-        "slot": 1,
-        "item": "Bezal Shard",
-        "chance": 4.63,
-        "attribute": "Blazing Resistance"
-      },
-      {
-        "slot": 2,
-        "item": "Bezal Shard",
-        "chance": 5.3,
-        "attribute": "Blazing Resistance"
-      },
-      {
-        "slot": 1,
-        "item": "Magma Slug Shard",
-        "chance": 3.86,
-        "attribute": "Infection"
-      },
-      {
-        "slot": 2,
-        "item": "Magma Slug Shard",
-        "chance": 5.3,
-        "attribute": "Infection"
-      },
-      {
-        "slot": 1,
-        "item": "Kada Knight Shard",
-        "chance": 3.14,
-        "attribute": "Lifeline"
-      },
-      {
-        "slot": 2,
-        "item": "Kada Knight Shard",
-        "chance": 3.59,
-        "attribute": "Lifeline"
-      },
-      {
-        "slot": 1,
-        "item": "Wither Specter Shard",
-        "chance": 3.14,
-        "attribute": "Breeze"
-      },
-      {
-        "slot": 2,
-        "item": "Wither Specter Shard",
-        "chance": 3.59,
-        "attribute": "Breeze"
-      },
-      {
-        "slot": 1,
-        "item": "Matcho Shard",
-        "chance": 3.14,
-        "attribute": "Ignition"
-      },
-      {
-        "slot": 2,
-        "item": "Matcho Shard",
-        "chance": 3.59,
-        "attribute": "Ignition"
-      },
-      {
-        "slot": 1,
-        "item": "Lava Flame Shard",
-        "chance": 2.57,
-        "attribute": "Blazing Fortune"
-      },
-      {
-        "slot": 2,
-        "item": "Lava Flame Shard",
-        "chance": 2.95,
-        "attribute": "Blazing Fortune"
-      },
-      {
-        "slot": 1,
-        "item": "Fire Eel Shard",
-        "chance": 1.95,
-        "attribute": "Trophy Hunter"
-      },
-      {
-        "slot": 2,
-        "item": "Fire Eel Shard",
-        "chance": 2.24,
-        "attribute": "Trophy Hunter"
-      },
-      {
-        "slot": 1,
-        "item": "Flare Shard",
-        "chance": 1.95,
-        "attribute": "Blazing"
-      },
-      {
-        "slot": 2,
-        "item": "Flare Shard",
-        "chance": 2.24,
-        "attribute": "Blazing"
-      },
-      {
-        "slot": 1,
-        "item": "Barbarian Duke X Shard",
-        "chance": 1.95,
-        "attribute": "Warrior"
-      },
-      {
-        "slot": 2,
-        "item": "Barbarian Duke X Shard",
-        "chance": 2.24,
-        "attribute": "Warrior"
-      },
-      {
-        "slot": 1,
-        "item": "Hellwisp Shard",
-        "chance": 1.59,
-        "attribute": "Matriach Cubs"
-      },
-      {
-        "slot": 2,
-        "item": "Hellwisp Shard",
-        "chance": 1.83,
-        "attribute": "Matriach Cubs"
-      },
-      {
-        "slot": 1,
-        "item": "XYZ Shard",
-        "chance": 1.29,
-        "attribute": "Mana Regeneration"
-      },
-      {
-        "slot": 2,
-        "item": "XYZ Shard",
-        "chance": 1.47,
-        "attribute": "Mana Regeneration"
-      },
-      {
-        "slot": 1,
-        "item": "Taurus Shard",
-        "chance": 0.67,
-        "attribute": "Maximal Torment"
-      },
-      {
-        "slot": 2,
-        "item": "Taurus Shard",
-        "chance": 0.77,
-        "attribute": "Maximal Torment"
-      },
-      {
-        "slot": 1,
-        "item": "Lord Jawbus Shard",
-        "chance": 0.51,
-        "attribute": "Crimson Hook"
-      },
-      {
-        "slot": 2,
-        "item": "Lord Jawbus Shard",
-        "chance": 0.59,
-        "attribute": "Crimson Hook"
-      },
-      {
-        "slot": 1,
-        "item": "Cinderbat Shard",
-        "chance": 0.67,
-        "attribute": "Magic Find"
-      },
-      {
-        "slot": 2,
-        "item": "Cinderbat Shard",
-        "chance": 0.77,
-        "attribute": "Magic Find"
-      },
-      {
-        "slot": 1,
-        "item": "Daemon Shard",
-        "chance": 0.51,
-        "attribute": "Pity"
-      },
-      {
-        "slot": 2,
-        "item": "Daemon Shard",
-        "chance": 0.59,
-        "attribute": "Pity"
-      },
-      {
-        "slot": 1,
-        "item": "Moltenfish Shard",
-        "chance": 0.51,
-        "attribute": "Star Bait"
-      },
-      {
-        "slot": 2,
-        "item": "Moltenfish Shard",
-        "chance": 0.59,
-        "attribute": "Star Bait"
-      },
-      {
-        "slot": 1,
         "item": "Ananke Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.05,
         "chance": 0.05,
-        "attribute": "Wings of Destiny"
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 2,
-        "item": "Ananke Shard",
-        "chance": 0.06,
-        "attribute": "Wings of Destiny"
+        "item": "Hellstorm Wand",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.1,
+        "chance": 0.1,
+        "rarity": "EPIC"
       },
       {
-        "slot": 3,
-        "item": "3 Kuudra Teeth",
-        "chance": 100.0
+        "item": "Tormentor",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.1,
+        "chance": 0.1,
+        "rarity": "LEGENDARY"
       },
       {
-        "slot": 4,
-        "item": "2,000 Crimson Essence",
-        "chance": 100.0
+        "item": "Ananke Feather",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.2625,
+        "chance": 0.27,
+        "rarity": "RARE"
       },
       {
-        "slot": 5,
-        "item": "1 Kraken Shard",
-        "chance": 50.0,
-        "attribute": "Vitality"
+        "item": "Burning Kuudra Core",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.5,
+        "chance": 0.51,
+        "rarity": "RARE"
       },
       {
-        "slot": 5,
-        "item": "2 Kraken Shard",
-        "chance": 50.0,
-        "attribute": "Vitality"
+        "item": "Daemon Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.5,
+        "chance": 0.51,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Lord Jawbus Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.5,
+        "chance": 0.51,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Moltenfish Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.5,
+        "chance": 0.51,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Cinderbat Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.65,
+        "chance": 0.67,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Taurus Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.65,
+        "chance": 0.67,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Hollow Wand",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.7,
+        "chance": 0.72,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Staff",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.7,
+        "chance": 0.72,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Mandraa",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.2,
+        "chance": 1.24,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Molten Belt",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.2,
+        "chance": 1.24,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Molten Bracelet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.2,
+        "chance": 1.24,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Molten Cloak",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.2,
+        "chance": 1.24,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Molten Necklace",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.2,
+        "chance": 1.24,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "XYZ Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.25,
+        "chance": 1.29,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Hellwisp Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.55,
+        "chance": 1.6,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Barbarian Duke X Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.9,
+        "chance": 1.96,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Fire Eel Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.9,
+        "chance": 1.96,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Flare Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.9,
+        "chance": 1.96,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Lava Flame Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.5,
+        "chance": 2.57,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Aurora Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Aurora Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Crimson Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Crimson Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Crimson Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Crimson Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fervor Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fervor Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fervor Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fervor Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Hollow Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Hollow Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Hollow Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Hollow Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Boots",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Chestplate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Helmet",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Terror Leggings",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.875,
+        "chance": 2.96,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Kada Knight Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.05,
+        "chance": 3.14,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Matcho Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.05,
+        "chance": 3.14,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Wither Spectre Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.05,
+        "chance": 3.14,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Magma Slug Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.75,
+        "chance": 3.86,
+        "rarity": "UNCOMMON"
+      },
+      {
+        "item": "Bezal Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 4.5,
+        "chance": 4.63,
+        "rarity": "COMMON"
       }
-    ]
+    ],
+    "paidChestSlot2": [
+      {
+        "item": "Kuudra Teeth",
+        "amount": "100",
+        "enchant": null,
+        "weight": 0.1,
+        "chance": 0.05,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Crimson Essence",
+        "amount": "10000",
+        "enchant": null,
+        "weight": 0.1,
+        "chance": 0.05,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Ananke Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 0.1,
+        "chance": 0.05,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Inferno I",
+        "weight": 0.38,
+        "chance": 0.2,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Fatal Tempo I",
+        "weight": 0.38,
+        "chance": 0.2,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Kuudra Teeth",
+        "amount": "25",
+        "enchant": null,
+        "weight": 1.0,
+        "chance": 0.53,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Crimson Essence",
+        "amount": "2500",
+        "enchant": null,
+        "weight": 1.0,
+        "chance": 0.53,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Heavy Pearl",
+        "amount": "10",
+        "enchant": null,
+        "weight": 1.0,
+        "chance": 0.53,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Lord Jawbus Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.0,
+        "chance": 0.53,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Daemon Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.0,
+        "chance": 0.53,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Moltenfish Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.0,
+        "chance": 0.53,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Taurus Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.3,
+        "chance": 0.69,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Cinderbat Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.3,
+        "chance": 0.69,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Dusty Travel Scroll to the Kuudra Skull",
+        "amount": "1",
+        "enchant": null,
+        "weight": 1.5,
+        "chance": 0.8,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "XYZ Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 2.5,
+        "chance": 1.33,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Kuudra Mandible",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.0,
+        "chance": 1.6,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Hellwisp Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.1,
+        "chance": 1.65,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Fire Eel Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.8,
+        "chance": 2.03,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Flare Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.8,
+        "chance": 2.03,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Barbarian Duke X Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 3.8,
+        "chance": 2.03,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Wheel of Fate",
+        "amount": "1",
+        "enchant": null,
+        "weight": 4.6,
+        "chance": 2.45,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Lava Flame Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 5.0,
+        "chance": 2.67,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Kada Knight Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 6.1,
+        "chance": 3.25,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Wither Spectre Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 6.1,
+        "chance": 3.25,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Matcho Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 6.1,
+        "chance": 3.25,
+        "rarity": "RARE"
+      },
+      {
+        "item": "Magma Slug Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 7.5,
+        "chance": 4.0,
+        "rarity": "UNCOMMON"
+      },
+      {
+        "item": "Bezal Shard",
+        "amount": "1",
+        "enchant": null,
+        "weight": 9.0,
+        "chance": 4.8,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Kuudra Teeth",
+        "amount": "5",
+        "enchant": null,
+        "weight": 10.0,
+        "chance": 5.33,
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Crimson Essence",
+        "amount": "500",
+        "enchant": null,
+        "weight": 10.0,
+        "chance": 5.33,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Heavy Pearl",
+        "amount": "3",
+        "enchant": null,
+        "weight": 10.0,
+        "chance": 5.33,
+        "rarity": "LEGENDARY"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Strong Vitality V",
+        "weight": 16.5,
+        "chance": 8.8,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Hardened Vitality V",
+        "weight": 16.5,
+        "chance": 8.8,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Vivacious Vitality V",
+        "weight": 16.5,
+        "chance": 8.8,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Enchanted Book",
+        "amount": "1",
+        "enchant": "Vampiric Vitality V",
+        "weight": 16.5,
+        "chance": 8.8,
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Kuudra Tentacle",
+        "amount": "1",
+        "enchant": null,
+        "weight": 16.0,
+        "chance": 8.53,
+        "rarity": "RARE"
+      }
+    ],
+    "guaranteed": [
+      {
+        "item": "Crimson Essence",
+        "amount": "2000",
+        "rarity": "COMMON"
+      },
+      {
+        "item": "Kuudra Teeth",
+        "amount": "3-4",
+        "rarity": "EPIC"
+      },
+      {
+        "item": "Kraken Shard",
+        "amount": "1-2",
+        "rarity": "LEGENDARY"
+      }
+    ],
+    "tentacleDyeChance": 0.005
   }
 }
