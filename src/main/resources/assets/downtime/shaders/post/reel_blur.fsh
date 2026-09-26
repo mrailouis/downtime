@@ -10,10 +10,11 @@ layout(std140) uniform SamplerInfo {
 in vec2 texCoord;
 out vec4 fragColor;
 
-const float ZOOM = 1.3;
+const float ZOOM = 1.6;
 const float CIRCLE_RADIUS = 0.275;
 const float CIRCLE_EDGE_SOFTNESS = 0.004;
 const float CIRCLE_OVERLAY_ALPHA = 0.25;
+const float DARKEN_AMOUNT = 0.2;
 const float DIAGONAL = 0.70710678;
 
 vec4 kawaseTap(vec2 uv, vec2 texel, float radius) {
@@ -42,7 +43,8 @@ void main() {
         vec2 center = vec2(0.5, 0.5);
         vec2 zoomedCoord = center + (texCoord - center) / ZOOM;
         vec3 zoomedColor = texture(InSampler, zoomedCoord).rgb;
-        fragColor = vec4(mix(zoomedColor, vec3(0.0), CIRCLE_OVERLAY_ALPHA), 1.0);
+        vec3 tinted = mix(zoomedColor, vec3(0.0), CIRCLE_OVERLAY_ALPHA);
+        fragColor = vec4(tinted * (1.0 - DARKEN_AMOUNT), 1.0);
         return;
     }
 
@@ -58,5 +60,6 @@ void main() {
     blurred += kawaseTap(texCoord, texel, 23.0);
     blurred *= 0.125;
 
-    fragColor = mix(texture(InSampler, texCoord), blurred, mask);
+    vec4 color = mix(texture(InSampler, texCoord), blurred, mask);
+    fragColor = vec4(color.rgb * (1.0 - DARKEN_AMOUNT), color.a);
 }

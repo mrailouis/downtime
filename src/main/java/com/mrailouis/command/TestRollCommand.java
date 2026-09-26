@@ -7,6 +7,7 @@ import com.mrailouis.data.KuudraLootEntry;
 import com.mrailouis.data.KuudraLootRoller;
 import com.mrailouis.data.KuudraLootTable;
 import com.mrailouis.data.KuudraTier;
+import com.mrailouis.feature.impl.LootEntryRollCard;
 import com.mrailouis.feature.impl.TestRollScreen;
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +35,7 @@ public final class TestRollCommand {
 	private static int run(CommandContext<FabricClientCommandSource> context, String requestedItemId) {
 		if (requestedItemId == null) {
 			var winner = KuudraLootRoller.pickWeighted(allWeightedEntries(), RANDOM);
-			Minecraft.getInstance().execute(() -> Minecraft.getInstance().setScreen(new TestRollScreen(winner)));
+			Minecraft.getInstance().execute(() -> Minecraft.getInstance().setScreen(new TestRollScreen(new LootEntryRollCard(winner), Optional.empty(), null)));
 			return 1;
 		}
 
@@ -44,7 +45,7 @@ public final class TestRollCommand {
 			return 0;
 		}
 
-		Minecraft.getInstance().execute(() -> Minecraft.getInstance().setScreen(new TestRollScreen(resolved.get())));
+		Minecraft.getInstance().execute(() -> Minecraft.getInstance().setScreen(new TestRollScreen(new LootEntryRollCard(resolved.get()), Optional.empty(), null)));
 		return 1;
 	}
 

@@ -6,6 +6,7 @@ import com.mojang.authlib.properties.Property;
 import com.mojang.authlib.properties.PropertyMap;
 import com.mrailouis.data.ItemTextureTable;
 import com.mrailouis.data.KuudraLootEntry;
+import com.mrailouis.utils.ItemModelUtils;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.Map;
@@ -43,6 +44,13 @@ public final class KuudraItemIcons {
 
 		if (ref.dyeColor() != null) {
 			stack.set(DataComponents.DYED_COLOR, new DyedItemColor(ref.dyeColor()));
+		}
+
+		if (ref.itemModel() != null) {
+			var itemModel = Identifier.parse(ref.itemModel());
+			if (ItemModelUtils.isModelLoaded(itemModel)) {
+				stack.set(DataComponents.ITEM_MODEL, itemModel);
+			}
 		}
 
 		return stack;

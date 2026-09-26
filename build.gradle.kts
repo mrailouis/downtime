@@ -9,6 +9,14 @@ repositories {
 		name = "DevAuth"
 		url = uri("https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1")
 	}
+	maven {
+		name = "Hypixel"
+		url = uri("https://repo.hypixel.net/repository/Hypixel/")
+	}
+	maven {
+		name = "Modrinth"
+		url = uri("https://api.modrinth.com/maven")
+	}
 }
 
 spotless {
@@ -41,6 +49,9 @@ dependencies {
 	implementation("net.fabricmc:fabric-loader:${providers.gradleProperty("loader_version").get()}")
 
 	implementation("net.fabricmc.fabric-api:fabric-api:${providers.gradleProperty("fabric_api_version").get()}")
+
+	implementation("net.hypixel:mod-api:${providers.gradleProperty("hypixel_mod_api_version").get()}")
+	implementation("maven.modrinth:hypixel-mod-api:${providers.gradleProperty("hypixel_mod_api_fabric_version").get()}")
 
 	//lombok my beloved <3
 	compileOnly("org.projectlombok:lombok:${providers.gradleProperty("lombok_version").get()}")

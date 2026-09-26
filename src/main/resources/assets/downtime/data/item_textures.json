@@ -21,7 +21,8 @@
     "itemId": "minecraft:leather_leggings"
   },
   "Aurora Staff": {
-    "itemId": "minecraft:blaze_rod"
+    "itemId": "minecraft:blaze_rod",
+    "itemModel": "hypixel_skyblock:item/uncategorized/aurora_staff"
   },
   "Barbarian Duke X Shard": {
     "skullUrl": "http://textures.minecraft.net/texture/3116896d7d0a1531e4419e38d8e0c28ac84c3a05f812e809ba4503ed718eb36d"
@@ -84,10 +85,12 @@
     "skullUrl": "http://textures.minecraft.net/texture/737623f79f7eb4f3f80da65b652cc44b2148eea41f9ffe2e86a23bdf49ab77b1"
   },
   "Heavy Pearl": {
-    "itemId": "minecraft:paper"
+    "itemId": "minecraft:paper",
+    "itemModel": "hypixel_skyblock:item/uncategorized/heavy_pearl"
   },
   "Hellstorm Wand": {
-    "itemId": "minecraft:redstone_torch"
+    "itemId": "minecraft:redstone_torch",
+    "itemModel": "hypixel_skyblock:item/uncategorized/hellstorm_wand"
   },
   "Hellwisp Shard": {
     "skullUrl": "http://textures.minecraft.net/texture/199c3470ba4317913717ab36b626aec0b563266e28b3a517d71e9a0af0c90f96"
@@ -108,7 +111,8 @@
     "itemId": "minecraft:leather_leggings"
   },
   "Hollow Wand": {
-    "itemId": "minecraft:feather"
+    "itemId": "minecraft:feather",
+    "itemModel": "hypixel_skyblock:item/island_relevant/crimson_isle/armors/hollow/hollow_wand"
   },
   "Kada Knight Shard": {
     "skullUrl": "http://textures.minecraft.net/texture/74e9c6e98582ffd8ff8feb3322cd1849c43fb16b158abb11ca7b42eda7743eb"
@@ -120,10 +124,12 @@
     "skullUrl": "http://textures.minecraft.net/texture/c89b6d34d2e267f159cfac7900e8d0a33e992754147adedf2faad4775022fb17"
   },
   "Kuudra Teeth": {
-    "itemId": "minecraft:paper"
+    "itemId": "minecraft:paper",
+    "itemModel": "hypixel_skyblock:item/uncategorized/kuudra_teeth"
   },
   "Kuudra Tentacle": {
-    "itemId": "minecraft:paper"
+    "itemId": "minecraft:paper",
+    "itemModel": "hypixel_skyblock:item/island_relevant/crimson_isle/kuudra/kuudra_tentacle"
   },
   "Lava Flame Shard": {
     "skullUrl": "http://textures.minecraft.net/texture/b78ef2e4cf2c41a2d14bfde9caff10219f5b1bf5b35a49eb51c6467882cb5f0"
@@ -177,7 +183,8 @@
     "itemId": "minecraft:leather_leggings"
   },
   "Tormentor": {
-    "itemId": "minecraft:iron_sword"
+    "itemId": "minecraft:iron_sword",
+    "itemModel": "hypixel_skyblock:item/island_relevant/crimson_isle/tormentor"
   },
   "Wheel of Fate": {
     "skullUrl": "http://textures.minecraft.net/texture/5c87f59b02886fef594eaebb46dc337aabb845b2c41bb4d238c12607d8a09544"
