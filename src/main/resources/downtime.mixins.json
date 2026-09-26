@@ -3,6 +3,11 @@
 	"package": "com.mrailouis.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [],
+	"client": [
+		"interfacemixins.GuiRenderStateMixin",
+		"accessor.GameRendererAccessor",
+		"mixins.GuiRendererMixin"
+	],
 	"injectors": {
 		"defaultRequire": 1
 	},
